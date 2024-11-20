@@ -17,6 +17,49 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+
+def create_skills_radar():
+    skills_data = {
+        'Categoria': ['Python', 'SQL', 'PowerBI', 'Tableau', 'Machine Learning', 'Excel'],
+        'Livello': [100, 70, 60, 70, 90, 100]
+    }
+    
+    fig = go.Figure()
+    fig.add_trace(go.Scatterpolar(
+        r=skills_data['Livello'],
+        theta=skills_data['Categoria'],
+        fill='toself',
+        line_color='#3b82f6',
+        fillcolor='rgba(59, 130, 246, 0.3)'
+    ))
+    
+    # Ottiene il colore del testo basato sul tema corrente
+    text_color = 'white' if st.get_option('theme.base') == 'dark' else 'black'
+    grid_color = 'rgba(255, 255, 255, 0.2)' if st.get_option('theme.base') == 'dark' else '#e5e7eb'
+    
+    fig.update_layout(
+        polar=dict(
+            radialaxis=dict(
+                visible=True,
+                range=[0, 100],
+                showline=False,
+                gridcolor=grid_color,
+                tickfont=dict(color=text_color),  # Colore dei numeri
+            ),
+            angularaxis=dict(
+                tickfont=dict(color=text_color),  # Colore delle etichette delle categorie
+                gridcolor=grid_color
+            ),
+            bgcolor='rgba(0,0,0,0)'  # Sfondo trasparente
+        ),
+        showlegend=False,
+        paper_bgcolor='rgba(0,0,0,0)',  # Sfondo del grafico trasparente
+        plot_bgcolor='rgba(0,0,0,0)',   # Sfondo del plot trasparente
+        margin=dict(t=60, b=60)
+    )
+    
+    return fig
+
 # Funzione per caricare l'immagine
 def load_image(image_path):
     try:
@@ -36,49 +79,181 @@ def image_to_base64(image):
     image.save(buffered, format="PNG")
     return base64.b64encode(buffered.getvalue()).decode()
 
-# Funzione per applicare stile CSS personalizzato
+# # Funzione per applicare stile CSS personalizzato
+# def local_css():
+#     st.markdown("""
+#     <style>
+#         /* Tema generale */
+#         .main {
+#             background-color: #f8f9fa;
+#         }
+        
+#         /* Stile per i contenitori principali */
+#         .stTabs [data-baseweb="tab-panel"] {
+#             background-color: white;
+#             padding: 25px;
+#             border-radius: 5px;
+#             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+#             margin-top: 10px;
+#         }
+        
+#         /* Stile per i titoli */
+#         h1, h2, h3 {
+#             color: #1f2937;
+#             font-weight: 600;
+#         }
+        
+#         /* Stile per il testo */
+#         p, li {
+#             color: #4b5563;
+#             font-size: 1.1rem;
+#             line-height: 1.6;
+#         }
+        
+#         /* Card personalizzata */
+#         .custom-card {
+#             background-color: white;
+#             padding: 20px;
+#             border-radius: 10px;
+#             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+#             margin: 10px 0;
+#         }
+        
+#         /* Stile per i bottoni */
+#         .stButton button {
+#             background-color: #3b82f6;
+#             color: white;
+#             border: none;
+#             border-radius: 5px;
+#             padding: 10px 20px;
+#             font-weight: 500;
+#         }
+        
+#         /* Badge per le competenze */
+#         .badge {
+#             background-color: #e5e7eb;
+#             color: #1f2937;
+#             padding: 5px 10px;
+#             border-radius: 15px;
+#             margin: 5px;
+#             display: inline-block;
+#             font-size: 0.9rem;
+#         }
+        
+#         /* Timeline per le esperienze */
+#         .timeline-item {
+#             border-left: 2px solid #3b82f6;
+#             padding-left: 20px;
+#             margin-bottom: 20px;
+#             position: relative;
+#         }
+        
+#         .timeline-item::before {
+#             content: '';
+#             width: 12px;
+#             height: 12px;
+#             background-color: #3b82f6;
+#             border-radius: 50%;
+#             position: absolute;
+#             left: -7px;
+#             top: 0;
+#         }
+        
+#         /* Header personalizzato */
+#         .header-container {
+#             background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+#             padding: 2rem;
+#             border-radius: 10px;
+#             color: white;
+#             margin-bottom: 2rem;
+#         }
+        
+#         .contact-info {
+#             background-color: rgba(255, 255, 255, 0.1);
+#             padding: 10px;
+#             border-radius: 5px;
+#             margin-top: 10px;
+#         }
+        
+#         /* Stile per le schede di competenza */
+#         .skill-card {
+#             background-color: white;
+#             padding: 15px;
+#             border-radius: 8px;
+#             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+#             margin: 10px 0;
+#         }
+        
+#         /* Progress bar personalizzata */
+#         .stProgress > div > div {
+#             background-color: #3b82f6;
+#         }
+#     </style>
+#     """, unsafe_allow_html=True)
 def local_css():
     st.markdown("""
     <style>
+        /* Variabili CSS per il tema */
+        :root {
+            --background-primary: var(--st-color-background-primary, #f8f9fa);
+            --text-primary: var(--st-color-text-primary, #1f2937);
+            --text-secondary: var(--st-color-text-secondary, #4b5563);
+            --accent-color: #3b82f6;
+            --card-background: var(--st-color-background-secondary, white);
+            --card-border: var(--st-color-border-light, rgba(0,0,0,0.1));
+        }
+
+        [data-theme="dark"] {
+            --background-primary: var(--st-color-background-primary, #1a1a1a);
+            --text-primary: var(--st-color-text-primary, #ffffff);
+            --text-secondary: var(--st-color-text-secondary, #cccccc);
+            --card-background: var(--st-color-background-secondary, #2d2d2d);
+            --card-border: var(--st-color-border-dark, rgba(255,255,255,0.1));
+        }
+        
         /* Tema generale */
         .main {
-            background-color: #f8f9fa;
+            background-color: var(--background-primary);
+            color: var(--text-primary);
         }
         
         /* Stile per i contenitori principali */
         .stTabs [data-baseweb="tab-panel"] {
-            background-color: white;
+            background-color: var(--card-background);
+            color: var(--text-primary);
             padding: 25px;
             border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px var(--card-border);
             margin-top: 10px;
         }
         
         /* Stile per i titoli */
         h1, h2, h3 {
-            color: #1f2937;
+            color: var(--text-primary);
             font-weight: 600;
         }
         
         /* Stile per il testo */
         p, li {
-            color: #4b5563;
+            color: var(--text-secondary);
             font-size: 1.1rem;
             line-height: 1.6;
         }
         
         /* Card personalizzata */
         .custom-card {
-            background-color: white;
+            background-color: var(--card-background);
+            color: var(--text-primary);
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px var(--card-border);
             margin: 10px 0;
+            border: 1px solid var(--card-border);
         }
         
         /* Stile per i bottoni */
         .stButton button {
-            background-color: #3b82f6;
+            background-color: var(--accent-color);
             color: white;
             border: none;
             border-radius: 5px;
@@ -88,28 +263,30 @@ def local_css():
         
         /* Badge per le competenze */
         .badge {
-            background-color: #e5e7eb;
-            color: #1f2937;
+            background-color: var(--card-background);
+            color: var(--text-primary);
             padding: 5px 10px;
             border-radius: 15px;
             margin: 5px;
             display: inline-block;
             font-size: 0.9rem;
+            border: 1px solid var(--accent-color);
         }
         
         /* Timeline per le esperienze */
         .timeline-item {
-            border-left: 2px solid #3b82f6;
+            border-left: 2px solid var(--accent-color);
             padding-left: 20px;
             margin-bottom: 20px;
             position: relative;
+            color: var(--text-primary);
         }
         
         .timeline-item::before {
             content: '';
             width: 12px;
             height: 12px;
-            background-color: #3b82f6;
+            background-color: var(--accent-color);
             border-radius: 50%;
             position: absolute;
             left: -7px;
@@ -118,7 +295,7 @@ def local_css():
         
         /* Header personalizzato */
         .header-container {
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            background: linear-gradient(135deg, #1e3a8a 0%, var(--accent-color) 100%);
             padding: 2rem;
             border-radius: 10px;
             color: white;
@@ -130,23 +307,47 @@ def local_css():
             padding: 10px;
             border-radius: 5px;
             margin-top: 10px;
+            color: white;
         }
         
         /* Stile per le schede di competenza */
         .skill-card {
-            background-color: white;
+            background-color: var(--card-background);
+            color: var(--text-primary);
             padding: 15px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px var(--card-border);
             margin: 10px 0;
+            border: 1px solid var(--card-border);
         }
         
         /* Progress bar personalizzata */
         .stProgress > div > div {
-            background-color: #3b82f6;
+            background-color: var(--accent-color);
+        }
+        
+        /* Stile specifico per il testo nelle card */
+        .custom-card h4, .skill-card h4 {
+            color: var(--text-primary);
+        }
+        
+        .custom-card p, .skill-card p {
+            color: var(--text-secondary);
+        }
+        
+        /* Stile per i grafici e le visualizzazioni */
+        .js-plotly-plot {
+            background-color: var(--card-background);
+            border-radius: 8px;
+            padding: 10px;
+            border: 1px solid var(--card-border);
         }
     </style>
     """, unsafe_allow_html=True)
+
+
+
+
 
 def create_skill_progress(skill, level):
     st.markdown(f"""
@@ -307,38 +508,16 @@ def main():
     with tabs[1]:
         st.markdown("<h2>Competenze Tecniche</h2>", unsafe_allow_html=True)
         
+        # Usa la nuova funzione per creare il grafico radar
+        fig = create_skills_radar()
+        st.plotly_chart(fig, use_container_width=True)
         # Grafico radar delle competenze
         skills_data = {
             'Categoria': ['Python', 'SQL', 'PowerBI', 'Tableau', 'Machine Learning', 'Excel'],
             'Livello': [100, 70, 60, 70, 90, 100]
         }
         
-        fig = go.Figure()
-        fig.add_trace(go.Scatterpolar(
-            r=skills_data['Livello'],
-            theta=skills_data['Categoria'],
-            fill='toself',
-            line_color='#3b82f6',
-            fillcolor='rgba(59, 130, 246, 0.3)'
-        ))
-        
-        fig.update_layout(
-            polar=dict(
-                radialaxis=dict(
-                    visible=True,
-                    range=[0, 100],
-                    showline=False,
-                    gridcolor='#e5e7eb'
-                ),
-                bgcolor='white'
-            ),
-            showlegend=False,
-            paper_bgcolor='white',
-            plot_bgcolor='white',
-            margin=dict(t=60, b=60)
-        )
-        
-        st.plotly_chart(fig, use_container_width=True)
+    
         
         # Dettaglio competenze con progress bar
         col1, col2 = st.columns(2)
