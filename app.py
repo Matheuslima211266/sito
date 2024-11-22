@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -17,6 +16,13 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+def get_binary_file_downloader_html(bin_file, file_label='File'):
+    """Create a download button for binary files."""
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    bin_str = base64.b64encode(data).decode()
+    href = f'<a href="data:application/octet-stream;base64,{bin_str}" download="{os.path.basename(bin_file)}" class="download-button">📥 {file_label}</a>'
+    return href
 
 def create_skills_radar():
     skills_data = {
@@ -33,7 +39,6 @@ def create_skills_radar():
         fillcolor='rgba(59, 130, 246, 0.3)'
     ))
     
-    # Ottiene il colore del testo basato sul tema corrente
     text_color = 'white' if st.get_option('theme.base') == 'dark' else 'black'
     grid_color = 'rgba(255, 255, 255, 0.2)' if st.get_option('theme.base') == 'dark' else '#e5e7eb'
     
@@ -44,26 +49,24 @@ def create_skills_radar():
                 range=[0, 100],
                 showline=False,
                 gridcolor=grid_color,
-                tickfont=dict(color=text_color),  # Colore dei numeri
+                tickfont=dict(color=text_color),
             ),
             angularaxis=dict(
-                tickfont=dict(color=text_color),  # Colore delle etichette delle categorie
+                tickfont=dict(color=text_color),
                 gridcolor=grid_color
             ),
-            bgcolor='rgba(0,0,0,0)'  # Sfondo trasparente
+            bgcolor='rgba(0,0,0,0)'
         ),
         showlegend=False,
-        paper_bgcolor='rgba(0,0,0,0)',  # Sfondo del grafico trasparente
-        plot_bgcolor='rgba(0,0,0,0)',   # Sfondo del plot trasparente
+        paper_bgcolor='rgba(0,0,0,0)',
+        plot_bgcolor='rgba(0,0,0,0)',
         margin=dict(t=60, b=60)
     )
     
     return fig
 
-# Funzione per caricare l'immagine
 def load_image(image_path):
     try:
-        # Verifica se il file esiste
         if os.path.exists(image_path):
             return Image.open(image_path)
         else:
@@ -73,12 +76,10 @@ def load_image(image_path):
         st.error(f"Errore nel caricamento dell'immagine: {str(e)}")
         return None
 
-# Funzione per convertire l'immagine in base64
 def image_to_base64(image):
     buffered = BytesIO()
     image.save(buffered, format="PNG")
     return base64.b64encode(buffered.getvalue()).decode()
-
 
 def local_css():
     st.markdown("""
@@ -101,6 +102,27 @@ def local_css():
             --card-border: var(--st-color-border-dark, rgba(255,255,255,0.1));
         }
         
+        /* Stile per il pulsante di download */
+        .download-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #3b82f6;
+            color: white !important;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .download-button:hover {
+            background-color: #2563eb;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        
         /* Tema generale */
         .main {
             background-color: var(--background-primary);
@@ -117,19 +139,6 @@ def local_css():
             margin-top: 10px;
         }
         
-        /* Stile per i titoli */
-        h1, h2, h3 {
-            color: var(--text-primary);
-            font-weight: 600;
-        }
-        
-        /* Stile per il testo */
-        p, li {
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-        
         /* Card personalizzata */
         .custom-card {
             background-color: var(--card-background);
@@ -139,28 +148,6 @@ def local_css():
             box-shadow: 0 4px 6px var(--card-border);
             margin: 10px 0;
             border: 1px solid var(--card-border);
-        }
-        
-        /* Stile per i bottoni */
-        .stButton button {
-            background-color: var(--accent-color);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            font-weight: 500;
-        }
-        
-        /* Badge per le competenze */
-        .badge {
-            background-color: var(--card-background);
-            color: var(--text-primary);
-            padding: 5px 10px;
-            border-radius: 15px;
-            margin: 5px;
-            display: inline-block;
-            font-size: 0.9rem;
-            border: 1px solid var(--accent-color);
         }
         
         /* Timeline per le esperienze */
@@ -200,44 +187,87 @@ def local_css():
             color: white;
         }
         
-        /* Stile per le schede di competenza */
-        .skill-card {
-            background-color: var(--card-background);
-            color: var(--text-primary);
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px var(--card-border);
-            margin: 10px 0;
-            border: 1px solid var(--card-border);
-        }
-        
-        /* Progress bar personalizzata */
-        .stProgress > div > div {
-            background-color: var(--accent-color);
-        }
-        
-        /* Stile specifico per il testo nelle card */
-        .custom-card h4, .skill-card h4 {
-            color: var(--text-primary);
-        }
-        
-        .custom-card p, .skill-card p {
-            color: var(--text-secondary);
-        }
-        
-        /* Stile per i grafici e le visualizzazioni */
-        .js-plotly-plot {
-            background-color: var(--card-background);
-            border-radius: 8px;
-            padding: 10px;
-            border: 1px solid var(--card-border);
+        /* Media queries per dispositivi mobili */
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 1rem;
+            }
+            
+            .header-container > div {
+                flex-direction: column !important;
+                text-align: center;
+                gap: 1rem !important;
+            }
+            
+            .profile-image-container {
+                margin: 0 auto;
+            }
+            
+            .contact-info {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                padding: 15px;
+            }
+            
+            .contact-info span {
+                margin: 5px 0;
+                display: block;
+            }
+            
+            h1 {
+                font-size: 1.5rem !important;
+            }
+            
+            h2 {
+                font-size: 1.2rem !important;
+            }
+            
+            .custom-card {
+                padding: 15px;
+            }
+            
+            .timeline-item {
+                padding-left: 15px;
+            }
+            
+            /* Ottimizzazione colonne per mobile */
+            .stColumns {
+                flex-direction: column;
+            }
+            
+            .stColumns > div {
+                width: 100% !important;
+                margin-bottom: 1rem;
+            }
+            
+            /* Ottimizzazione tabs per mobile */
+            .stTabs [data-baseweb="tab"] {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+            
+            /* Ottimizzazione grafici per mobile */
+            .js-plotly-plot {
+                height: auto !important;
+                max-height: 400px;
+            }
+            
+            /* Ottimizzazione skill cards per mobile */
+            .skill-card {
+                margin: 8px 0;
+                padding: 12px;
+            }
+            
+            /* Miglioramento leggibilità testo su mobile */
+            p, li {
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
         }
     </style>
     """, unsafe_allow_html=True)
-
-
-
-
 
 def create_skill_progress(skill, level):
     st.markdown(f"""
@@ -251,25 +281,17 @@ def create_skill_progress(skill, level):
     """, unsafe_allow_html=True)
 
 def create_timeline_item(title, period, company, description):
-    # Processa la descrizione per gestire i punti elenco e le enfasi
-    # Sostituisce <b>▶</b> con uno stile più enfatizzato
     description = description.replace('<b>▶</b>', '<span style="color: #3b82f6; font-weight: 600; font-size: 1.1em;">▶</span>')
-    
-    # Gestisce i punti elenco con •
-    # Divide il testo in righe
     lines = description.split('\n')
     formatted_lines = []
     for line in lines:
         line = line.strip()
         if line.startswith('•'):
-            # Aggiunge padding e stile per i punti elenco
             formatted_line = f'<div style="padding-left: 20px; margin: 5px 0;">{line}</div>'
         else:
-            # Per le altre righe, mantiene il formato normale
             formatted_line = f'<div style="margin: 10px 0;">{line}</div>'
         formatted_lines.append(formatted_line)
     
-    # Unisce le righe formattate
     formatted_description = '\n'.join(formatted_lines)
     
     st.markdown(f"""
@@ -284,45 +306,30 @@ def create_timeline_item(title, period, company, description):
     """, unsafe_allow_html=True)
 
 def create_formatted_text(description):
-    # Processa la descrizione per gestire i punti elenco e le enfasi
-    # Sostituisce <b>▶</b> con uno stile più enfatizzato
     description = description.replace('<b>▶</b>', '<span style="color: #3b82f6; font-weight: 600; font-size: 1.1em;">▶</span>')
-    
-    # Gestisce i punti elenco con •
-    # Divide il testo in righe
     lines = description.split('\n')
     formatted_lines = []
     for line in lines:
         line = line.strip()
         if line.startswith('•'):
-            # Aggiunge padding e stile per i punti elenco
             formatted_line = f'<div style="padding-left: 20px; margin: 5px 0;">{line}</div>'
         else:
-            # Per le altre righe, mantiene il formato normale
             formatted_line = f'<div style="margin: 10px 0;">{line}</div>'
         formatted_lines.append(formatted_line)
-    
-    # Unisce le righe formattate
     return '\n'.join(formatted_lines)
 
-
 def main():
-    # Debug: stampa la directory corrente e i file disponibili
-    print("Directory corrente:", os.getcwd())
-    print("File nella directory:", os.listdir())
-    
     local_css()
     
     # Caricamento dell'immagine
-    image_path = "Soggetto.png"  # Assicurati che il nome del file sia corretto
+    image_path = "Soggetto.png"
     profile_image = load_image(image_path)
     
     # Header con gestione condizionale dell'immagine
     if profile_image:
-        image_html = f'<img src="data:image/png;base64,{image_to_base64(profile_image)}" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid white;">'
+        image_html = f'<div class="profile-image-container"><img src="data:image/png;base64,{image_to_base64(profile_image)}" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid white;"></div>'
     else:
-        # Fallback a un placeholder se l'immagine non può essere caricata
-        image_html = '<div style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid white; background-color: #3b82f6; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">ML</div>'
+        image_html = '<div class="profile-image-container" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid white; background-color: #3b82f6; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">ML</div>'
     
     st.markdown(f"""
     <div class="header-container">
@@ -332,15 +339,23 @@ def main():
                 <h1 style="color: white; margin: 0;">Matheus Lima de Oliveira Sabino</h1>
                 <h2 style="color: white; opacity: 0.9; margin: 10px 0;">Data Analyst Junior</h2>
                 <div class="contact-info">
-                    <span style="margin-right: 20px;">📧 matheus.lima211266@gmail.com</span>
-                    <span style="margin-right: 20px;">📱 +39 392 157 5103</span>
-                    <span style="margin-right: 20px;">📍 Bologna</span>
+                    <span>📧 matheus.lima211266@gmail.com</span>
+                    <span>📱 +39 392 157 5103</span>
+                    <span>📍 Bologna</span>
                     <span>🎂 25/05/1998</span>
                 </div>
             </div>
         </div>
     </div>
     """, unsafe_allow_html=True)
+    
+    # Aggiungi il pulsante per scaricare il CV
+    cv_path = "curriculumvitae Matheus Lima.pdf"
+    if os.path.exists(cv_path):
+        st.markdown(
+            get_binary_file_downloader_html(cv_path, 'Scarica CV'),
+            unsafe_allow_html=True
+        )
     
     # Tabs per la navigazione
     tabs = st.tabs(["🎯 Chi Sono", "💡 Competenze", "💼 Esperienze", "🎓 Formazione"])
@@ -401,13 +416,6 @@ def main():
         # Usa la nuova funzione per creare il grafico radar
         fig = create_skills_radar()
         st.plotly_chart(fig, use_container_width=True)
-        # Grafico radar delle competenze
-        skills_data = {
-            'Categoria': ['Python', 'SQL', 'PowerBI', 'Tableau', 'Machine Learning', 'Excel'],
-            'Livello': [100, 70, 60, 70, 90, 100]
-        }
-        
-    
         
         # Dettaglio competenze con progress bar
         col1, col2 = st.columns(2)
@@ -415,7 +423,7 @@ def main():
         with col1:
             st.markdown("<h3>Data Analysis</h3>", unsafe_allow_html=True)
             create_skill_progress("Python", 100)
-            create_skill_progress("SQL",70)
+            create_skill_progress("SQL", 70)
             create_skill_progress("Machine Learning", 90)
             
         with col2:
@@ -513,31 +521,30 @@ def main():
             """
         )
         
-        with tabs[3]:
-            st.markdown("""
-            <div class="custom-card">
-                <h2>Formazione</h2>
-                <h3 style="color: #3b82f6;">IFTS "Tecnico per l'analisi e la visualizzazione dei dati"</h3>
-                <p style="color: #6b7280;">Dicembre 2022 - Giugno 2023</p>
-                <ul style="color: #4b5563;">
-                    <li>Sviluppo di un modello Machine Learning per fake news detection usando scikit-learn</li>
-                    <li>Implementazione di pipeline ETL per data cleaning e preprocessing</li>
-                    <li>Creazione di dashboard interattive con Power BI</li>
-                    <li>Progettazione e gestione database SQL per analytics</li>
-                    <li>Stack tecnologico: Python, SQL, Power BI, Git, scikit-learn, Excel</li>
-                </ul>
-                <div style="margin-top: 20px;">
-                    <span class="badge">Python</span>
-                    <span class="badge">SQL</span>
-                    <span class="badge">Power BI</span>
-                    <span class="badge">Git</span>
-                    <span class="badge">scikit-learn</span>
-                    <span class="badge">Excel</span>
-                    <span class="badge">Powerpoint</span>
-                </div>
+    with tabs[3]:
+        st.markdown("""
+        <div class="custom-card">
+            <h2>Formazione</h2>
+            <h3 style="color: #3b82f6;">IFTS "Tecnico per l'analisi e la visualizzazione dei dati"</h3>
+            <p style="color: #6b7280;">Dicembre 2022 - Giugno 2023</p>
+            <ul style="color: #4b5563;">
+                <li>Sviluppo di un modello Machine Learning per fake news detection usando scikit-learn</li>
+                <li>Implementazione di pipeline ETL per data cleaning e preprocessing</li>
+                <li>Creazione di dashboard interattive con Power BI</li>
+                <li>Progettazione e gestione database SQL per analytics</li>
+                <li>Stack tecnologico: Python, SQL, Power BI, Git, scikit-learn, Excel</li>
+            </ul>
+            <div style="margin-top: 20px;">
+                <span class="badge">Python</span>
+                <span class="badge">SQL</span>
+                <span class="badge">Power BI</span>
+                <span class="badge">Git</span>
+                <span class="badge">scikit-learn</span>
+                <span class="badge">Excel</span>
+                <span class="badge">Powerpoint</span>
             </div>
-            """, unsafe_allow_html=True)
+        </div>
+        """, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
-
