@@ -8,6 +8,17 @@ import os
 import base64
 from io import BytesIO
 
+
+
+
+
+
+
+
+
+
+
+
 # Configurazione della pagina
 st.set_page_config(
     page_title="Matheus Lima - Portfolio",

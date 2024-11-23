@@ -1,0 +1,694 @@
+{
+    "azienda_sospetta": {
+        "info_base": {
+            "nome": "FAST LOGISTICS SRL",
+            "codice_fiscale": "12345678901",
+            "p_iva": "12345678901",
+            "data_costituzione": "2020-01-15",
+            "sede_legale": {
+                "indirizzo": "Via delle Industrie 123",
+                "comune": "Milano",
+                "provincia": "MI",
+                "regione": "Lombardia",
+                "data_trasferimento": "2022-05-15",
+                "sede_precedente": {
+                    "indirizzo": "Via Roma 1",
+                    "comune": "Napoli",
+                    "provincia": "NA"
+                }
+            },
+            "sedi_operative": [
+                {
+                    "indirizzo": "Via dei Trasporti 45",
+                    "comune": "Piacenza",
+                    "provincia": "PC",
+                    "data_apertura": "2021-03-01",
+                    "dipendenti": 35,
+                    "mezzi": 12
+                },
+                {
+                    "indirizzo": "Via delle Merci 89",
+                    "comune": "Roma",
+                    "provincia": "RM",
+                    "data_apertura": "2022-07-01",
+                    "dipendenti": 25,
+                    "mezzi": 8
+                }
+            ],
+            "ateco": {
+                "principale": "49.41",
+                "secondari": ["52.29.22", "49.42"],
+                "storia": [
+                    {
+                        "data": "2020-01-15",
+                        "codice": "49.41"
+                    },
+                    {
+                        "data": "2021-06-01",
+                        "codice": "52.29.22",
+                        "aggiunto": true
+                    }
+                ]
+            },
+            "forma_giuridica": {
+                "attuale": "SRL",
+                "variazioni": [
+                    {
+                        "data": "2020-01-15",
+                        "tipo": "SRL SEMPLIFICATA"
+                    },
+                    {
+                        "data": "2021-09-01",
+                        "tipo": "SRL"
+                    }
+                ]
+            }
+        },
+
+        "governance": {
+            "storia_amministratori": [
+                {
+                    "periodo": "2020-01-15/2021-08-31",
+                    "nome": "Mario Rossi",
+                    "cf": "RSSMRA95A01F205X",
+                    "carica": "AU",
+                    "eta_nomina": 25,
+                    "altre_cariche": 3,
+                    "precedenti": {
+                        "protesti": 1,
+                        "pregiudizievoli": 2
+                    }
+                },
+                {
+                    "periodo": "2021-09-01/oggi",
+                    "nome": "John Smith",
+                    "cf": "SMTJHN80A01Z404U",
+                    "carica": "AU",
+                    "eta_nomina": 41,
+                    "residenza": "UK",
+                    "altre_cariche": 8,
+                    "societa_cessate": 4
+                }
+            ],
+
+            "storia_capitale": [
+                {
+                    "data": "2020-01-15",
+                    "importo": 1000,
+                    "tipo": "COSTITUZIONE"
+                },
+                {
+                    "data": "2021-09-01",
+                    "importo": 50000,
+                    "tipo": "AUMENTO_DENARO"
+                },
+                {
+                    "data": "2022-06-15",
+                    "importo": 500000,
+                    "tipo": "AUMENTO_CONFERIMENTO_BENI"
+                }
+            ],
+
+            "storia_soci": [
+                {
+                    "periodo": "2020-01-15/2021-08-31",
+                    "composizione": [
+                        {
+                            "nome": "Mario Rossi",
+                            "quota": 100,
+                            "tipo": "PF",
+                            "eta": 25,
+                            "residenza": "Napoli"
+                        }
+                    ]
+                },
+                {
+                    "periodo": "2021-09-01/2022-06-14",
+                    "composizione": [
+                        {
+                            "nome": "LOGISTICS HOLDING LTD",
+                            "quota": 60,
+                            "tipo": "PG",
+                            "sede": "UK",
+                            "data_costituzione": "2021-08-15"
+                        },
+                        {
+                            "nome": "John Smith",
+                            "quota": 40,
+                            "tipo": "PF",
+                            "eta": 41,
+                            "residenza": "UK"
+                        }
+                    ]
+                },
+                {
+                    "periodo": "2022-06-15/oggi",
+                    "composizione": [
+                        {
+                            "nome": "GLOBAL TRADE LTD",
+                            "quota": 80,
+                            "tipo": "PG",
+                            "sede": "CY",
+                            "data_costituzione": "2022-05-01"
+                        },
+                        {
+                            "nome": "John Smith",
+                            "quota": 20,
+                            "tipo": "PF",
+                            "eta": 41,
+                            "residenza": "UK"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        "dipendenti": {
+            "2020": {
+                "Q1": {"numero": 3, "costo": 25000},
+                "Q2": {"numero": 5, "costo": 45000},
+                "Q3": {"numero": 8, "costo": 75000},
+                "Q4": {"numero": 12, "costo": 110000}
+            },
+            "2021": {
+                "Q1": {"numero": 15, "costo": 140000},
+                "Q2": {"numero": 25, "costo": 230000},
+                "Q3": {"numero": 35, "costo": 320000},
+                "Q4": {"numero": 50, "costo": 450000}
+            },
+            "2022": {
+                "Q1": {"numero": 65, "costo": 580000},
+                "Q2": {"numero": 85, "costo": 750000},
+                "Q3": {"numero": 110, "costo": 950000},
+                "Q4": {"numero": 140, "costo": 1200000}
+            },
+            "2023": {
+                "Q1": {"numero": 180, "costo": 1500000},
+                "Q2": {"numero": 220, "costo": 1800000}
+            },
+            "dettaglio_attuale": {
+                "eta": {
+                    "18-25": 45,
+                    "26-35": 120,
+                    "36-45": 40,
+                    "over_45": 15
+                },
+                "nazionalita": {
+                    "italiana": 80,
+                    "ue": 90,
+                    "extra_ue": 50
+                },
+                "contratti": {
+                    "tempo_determinato": 185,
+                    "tempo_indeterminato": 35,
+                    "stage": 0
+                },
+                "orario": {
+                    "full_time": 85,
+                    "part_time": 135
+                },
+                "qualifiche": {
+                    "operai": 195,
+                    "impiegati": 20,
+                    "quadri": 5
+                }
+            }
+        },
+
+        "mezzi": {
+            "2020": {
+                "Q4": {
+                    "numero": 5,
+                    "proprieta": 1,
+                    "leasing": 4,
+                    "valore": 400000
+                }
+            },
+            "2021": {
+                "Q4": {
+                    "numero": 20,
+                    "proprieta": 2,
+                    "leasing": 18,
+                    "valore": 1600000
+                }
+            },
+            "2022": {
+                "Q4": {
+                    "numero": 45,
+                    "proprieta": 3,
+                    "leasing": 42,
+                    "valore": 3600000
+                }
+            },
+            "2023": {
+                "Q2": {
+                    "numero": 70,
+                    "proprieta": 5,
+                    "leasing": 65,
+                    "valore": 5600000
+                }
+            },
+            "dettaglio_attuale": {
+                "eta_media": 1.5,
+                "tipologia": {
+                    "motrici": 45,
+                    "rimorchi": 20,
+                    "furgoni": 5
+                },
+                "societa_leasing": [
+                    {
+                        "nome": "ALPHA LEASE",
+                        "numero_contratti": 35,
+                        "valore": 2800000
+                    },
+                    {
+                        "nome": "BETA LEASE",
+                        "numero_contratti": 30,
+                        "valore": 2400000
+                    }
+                ]
+            }
+        },
+
+        "dati_economici": {
+            "fatturato_mensile": {
+                "2020": [50000, 55000, 60000, 70000, 75000, 80000, 
+                        90000, 95000, 100000, 110000, 120000, 130000],
+                "2021": [140000, 160000, 180000, 200000, 220000, 250000,
+                        280000, 300000, 350000, 380000, 400000, 450000],
+                "2022": [500000, 550000, 600000, 650000, 700000, 800000,
+                        900000, 950000, 1000000, 1100000, 1200000, 1300000],
+                "2023": [1400000, 1500000, 1600000, 1700000, 1800000, 1900000]
+            },
+            "clienti": {
+                "2020": {
+                    "numero_totale": 5,
+                    "concentrazione_primo": 45,
+                    "concentrazione_top3": 85
+                },
+                "2021": {
+                    "numero_totale": 12,
+                    "concentrazione_primo": 55,
+                    "concentrazione_top3": 90
+                },
+                "2022": {
+                    "numero_totale": 8,
+                    "concentrazione_primo": 65,
+                    "concentrazione_top3": 95
+                },
+                "2023": {
+                    "numero_totale": 3,
+                    "concentrazione_primo": 75,
+                    "concentrazione_top3": 98
+                }
+            },
+            "fornitori": {
+                "2020": {
+                    "numero_totale": 15,
+                    "concentrazione_primo": 30
+                },
+                "2021": {
+                    "numero_totale": 25,
+                    "concentrazione_primo": 35
+                },
+                "2022": {
+                    "numero_totale": 20,
+                    "concentrazione_primo": 45
+                },
+                "2023": {
+                    "numero_totale": 12,
+                    "concentrazione_primo": 60
+                }
+            }
+        },
+
+        "dati_finanziari": {
+            "conti_correnti": [
+                {
+                    "banca": "BANCA1",
+                    "apertura": "2020-01-20",
+                    "chiusura": "2021-12-31",
+                    "saldi_medi": {
+                        "2020": 25000,
+                        "2021": 180000
+                    }
+                },
+                {
+                    "banca": "BANCA2",
+                    "apertura": "2021-06-15",
+                    "saldi_medi": {
+                        "2021": 250000,
+                        "2022": 450000,
+                        "2023": 380000
+                    }
+                },
+                {
+                    "banca": "BANCA3",
+                    "apertura": "2022-03-01",
+                    "saldi_medi": {
+                        "2022": 850000,
+                        "2023": 920000
+                    }
+                }
+            ],
+            "movimentazione": {
+                "2021": {
+                    "bonifici_italia": {
+                        "numero": 850,
+                        "importo_totale": 2800000
+                    },
+                    "bonifici_estero": {
+                        "numero": 25,
+                        "importo_totale": 450000,
+                        "paesi": ["UK", "DE"]
+                    }
+                },
+                "2022": {
+                    "bonifici_italia": {
+                        "numero": 1200,
+                        "importo_totale": 8500000
+                    },
+                    "bonifici_estero": {
+                        "numero": 180,
+                        "importo_totale": 3500000,
+                        "paesi": ["UK", "CY", "HK", "AE"]
+                    }
+                },
+                "2023": {
+                    "bonifici_italia": {
+                        "numero": 750,
+                        "importo_totale": 7200000
+                    },
+                    "bonifici_estero": {
+                        "numero": 250,
+                        "importo_totale": 4800000,
+                        "paesi": ["CY", "HK", "AE", "VG"]
+                    }
+                }
+            },
+            "finanziamenti": {
+                "leasing": {
+                    "2021": {"numero": 18, "debito_residuo": 1400000},
+                    "2022": {"numero": 42, "debito_residuo": 3200000},
+                    "2023": {"numero": 65, "debito_residuo": 4900000}
+                },
+                "mutui": [],
+                "altri_finanziamenti": [
+                    {
+                        "tipo": "ANTICIPO_FATTURE",
+                        "banca": "BANCA2",
+                        "importo": 500000,
+                        "accensione": "2022-05-15"
+                    }
+                ]
+            }
+        },
+
+        "eventi_negativi": {
+            "protesti": [
+                {
+                    "data": "2022-08-15",
+                    "importo": 45000,
+                    "tipo": "PAGHERÒ"
+                }
+            ],
+            "pregiudizievoli": [
+                {
+                    "data": "2022-09-20",
+                    "tipo": "DECRETO_INGIUNTIVO",
+                    "importo": 85000
+                }
+            ],
+            {
+            "inps": {
+                "ritardi_pagamento": [
+                    {
+                        "periodo": "07/2022",
+                        "importo": 120000,
+                        "status": "REGOLARIZZATO"
+                    },
+                    {
+                        "periodo": "11/2022",
+                        "importo": 180000,
+                        "status": "REGOLARIZZATO"
+                    },
+                    {
+                        "periodo": "03/2023",
+                        "importo": 250000,
+                        "status": "IN_CORSO"
+                    }
+                ],
+                "dipendenti_dichiarati": {
+                    "2021": {"media": 31, "var_max": 12},
+                    "2022": {"media": 100, "var_max": 35},
+                    "2023": {"media": 200, "var_max": 45}
+                }
+            },
+            "infortuni": {
+                "2021": {"numero": 2, "gravita": "LIEVE"},
+                "2022": {"numero": 5, "gravita": "MEDIA"},
+                "2023": {"numero": 8, "gravita": "MEDIA"}
+            },
+            "contenziosi": [
+                {
+                    "data_apertura": "2022-11-15",
+                    "tipo": "LAVORO",
+                    "stato": "IN_CORSO",
+                    "valore": 75000
+                },
+                {
+                    "data_apertura": "2023-02-10",
+                    "tipo": "COMMERCIALE",
+                    "stato": "IN_CORSO",
+                    "valore": 150000
+                }
+            ]
+        },
+
+        "autorizzazioni_licenze": {
+            "albo_autotrasportatori": {
+                "numero": "MI/12345/AB",
+                "data_iscrizione": "2020-02-01",
+                "classe": "superiore 1.5t",
+                "variazioni": [
+                    {
+                        "data": "2021-06-15",
+                        "tipo": "AUMENTO_MEZZI",
+                        "dettaglio": "da 10 a 25 mezzi"
+                    },
+                    {
+                        "data": "2022-09-01",
+                        "tipo": "AUMENTO_MEZZI",
+                        "dettaglio": "da 25 a 50 mezzi"
+                    }
+                ]
+            },
+            "autorizzazioni_speciali": [
+                {
+                    "tipo": "ADR",
+                    "data_rilascio": "2022-01-15",
+                    "scadenza": "2025-01-14",
+                    "ente": "MIT"
+                }
+            ],
+            "certificazioni": [
+                {
+                    "tipo": "ISO 9001",
+                    "ente": "BUREAU VERITAS",
+                    "data_rilascio": "2021-05-20",
+                    "scadenza": "2024-05-19"
+                }
+            ]
+        },
+
+        "operativita": {
+            "zone_attivita": {
+                "2021": ["Lombardia", "Emilia-Romagna"],
+                "2022": ["Lombardia", "Emilia-Romagna", "Lazio", "Campania"],
+                "2023": ["Lombardia", "Emilia-Romagna", "Lazio", "Campania", "Sicilia"]
+            },
+            "tipologia_trasporti": {
+                "2021": {
+                    "nazionale": 90,
+                    "internazionale": 10,
+                    "settori_merci": ["alimentari", "industriale"]
+                },
+                "2022": {
+                    "nazionale": 70,
+                    "internazionale": 30,
+                    "settori_merci": ["alimentari", "industriale", "rifiuti"]
+                },
+                "2023": {
+                    "nazionale": 50,
+                    "internazionale": 50,
+                    "settori_merci": ["alimentari", "industriale", "rifiuti", "ADR"]
+                }
+            },
+            "km_percorsi": {
+                "2021": {
+                    "totale": 750000,
+                    "media_per_mezzo": 37500
+                },
+                "2022": {
+                    "totale": 2250000,
+                    "media_per_mezzo": 50000
+                },
+                "2023": {
+                    "totale_stimato": 4200000,
+                    "media_per_mezzo": 60000
+                }
+            },
+            "carburante": {
+                "2021": {
+                    "litri": 280000,
+                    "costo": 420000,
+                    "fornitori": 3
+                },
+                "2022": {
+                    "litri": 850000,
+                    "costo": 1450000,
+                    "fornitori": 2
+                },
+                "2023": {
+                    "litri_stimati": 1600000,
+                    "costo_stimato": 2800000,
+                    "fornitori": 1
+                }
+            }
+        },
+
+        "assicurazioni": {
+            "polizze_attive": [
+                {
+                    "tipo": "RCA Flotta",
+                    "compagnia": "ALPHA INSURANCE",
+                    "premio_annuo": 450000,
+                    "sinistri": {
+                        "2021": {"numero": 3, "liquidato": 25000},
+                        "2022": {"numero": 8, "liquidato": 85000},
+                        "2023": {"numero": 6, "liquidato": 65000}
+                    }
+                },
+                {
+                    "tipo": "RC Vettoriale",
+                    "compagnia": "BETA INSURANCE",
+                    "premio_annuo": 180000,
+                    "sinistri": {
+                        "2021": {"numero": 1, "liquidato": 15000},
+                        "2022": {"numero": 4, "liquidato": 120000},
+                        "2023": {"numero": 5, "liquidato": 180000}
+                    }
+                }
+            ]
+        },
+
+        "analisi_web": {
+            "sito": {
+                "dominio": "fastlogistics.it",
+                "registrazione": "2022-03-15",
+                "hosting": "FOREIGN_PROVIDER",
+                "ultimo_aggiornamento": "2023-01-10"
+            },
+            "social_media": {
+                "linkedin": {
+                    "presente": true,
+                    "followers": 250,
+                    "post_ultimi_6_mesi": 5
+                },
+                "facebook": {
+                    "presente": true,
+                    "followers": 1200,
+                    "post_ultimi_6_mesi": 12
+                }
+            },
+            "recensioni_online": {
+                "google": {
+                    "numero": 15,
+                    "media": 2.8,
+                    "negative": 9
+                },
+                "trustpilot": {
+                    "numero": 8,
+                    "media": 2.5,
+                    "negative": 5
+                }
+            }
+        },
+
+        "network_relazioni": {
+            "collegamenti_societari": {
+                "soci_attuali": {
+                    "altre_partecipazioni": [
+                        {
+                            "societa": "GLOBAL SHIPPING LTD",
+                            "sede": "HK",
+                            "quota": 100,
+                            "stato": "ATTIVA"
+                        },
+                        {
+                            "societa": "FAST SERVICES LTD",
+                            "sede": "CY",
+                            "quota": 100,
+                            "stato": "ATTIVA"
+                        }
+                    ]
+                },
+                "amministratori": {
+                    "altre_cariche": [
+                        {
+                            "societa": "SPEED LOGISTICS LTD",
+                            "sede": "UK",
+                            "carica": "Director",
+                            "stato": "ATTIVA"
+                        },
+                        {
+                            "societa": "QUICK TRANSPORT SRL",
+                            "sede": "IT",
+                            "carica": "AU",
+                            "stato": "CESSATA"
+                        }
+                    ]
+                }
+            },
+            "fornitori_strategici": [
+                {
+                    "nome": "ALPHA LEASE",
+                    "tipologia": "LEASING",
+                    "esposizione": 2800000,
+                    "inizio_rapporto": "2021-03-15"
+                },
+                {
+                    "nome": "BETA FUEL",
+                    "tipologia": "CARBURANTE",
+                    "esposizione": 450000,
+                    "inizio_rapporto": "2022-06-01"
+                }
+            ],
+            "clienti_principali": [
+                {
+                    "nome": "MEGA RETAIL SPA",
+                    "settore": "GDO",
+                    "fatturato_annuo": 2500000,
+                    "inizio_rapporto": "2022-01-15",
+                    "modalita_pagamento": "bonifico 90gg"
+                },
+                {
+                    "nome": "BETA INDUSTRY",
+                    "settore": "MANIFATTURIERO",
+                    "fatturato_annuo": 1200000,
+                    "inizio_rapporto": "2022-08-01",
+                    "modalita_pagamento": "riba 60gg"
+                }
+            ]
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

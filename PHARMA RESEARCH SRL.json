@@ -1,0 +1,742 @@
+{
+    "azienda_6": {
+        "info_base": {
+            "nome": "PHARMA RESEARCH SRL",
+            "codice_fiscale": "12345678907",
+            "p_iva": "12345678907",
+            "data_costituzione": "2020-05-01",
+            "sede_legale": {
+                "indirizzo": "Via della Ricerca Farmaceutica 89",
+                "comune": "Siena",
+                "provincia": "SI",
+                "regione": "Toscana",
+                "data_trasferimento": "2022-04-01",
+                "sede_precedente": {
+                    "indirizzo": "Via delle Scienze 34",
+                    "comune": "Milano",
+                    "provincia": "MI"
+                }
+            },
+            "sedi_operative": [
+                {
+                    "indirizzo": "Via dei Laboratori 56",
+                    "comune": "Siena",
+                    "provincia": "SI",
+                    "data_apertura": "2020-07-01",
+                    "dipendenti": 45,
+                    "tipo": "R&D_CENTER"
+                },
+                {
+                    "indirizzo": "Via delle Biotecnologie 78",
+                    "comune": "Latina",
+                    "provincia": "LT",
+                    "data_apertura": "2022-01-15",
+                    "dipendenti": 35,
+                    "tipo": "STABILIMENTO_PRODUTTIVO"
+                }
+            ],
+            "ateco": {
+                "principale": "21.20",
+                "secondari": ["72.11", "46.46"],
+                "storia": [
+                    {
+                        "data": "2020-05-01",
+                        "codice": "21.20"
+                    },
+                    {
+                        "data": "2021-07-15",
+                        "codice": "72.11",
+                        "aggiunto": true
+                    }
+                ]
+            },
+            "forma_giuridica": {
+                "attuale": "SRL",
+                "variazioni": [
+                    {
+                        "data": "2020-05-01",
+                        "tipo": "SRL STARTUP INNOVATIVA"
+                    },
+                    {
+                        "data": "2022-05-01",
+                        "tipo": "SRL"
+                    }
+                ]
+            }
+        },
+
+        "governance": {
+            "storia_amministratori": [
+                {
+                    "periodo": "2020-05-01/2022-04-30",
+                    "nome": "Elena Bianchi",
+                    "cf": "BNCLNE78M41F205X",
+                    "carica": "AU",
+                    "eta_nomina": 42,
+                    "altre_cariche": 1,
+                    "precedenti": {
+                        "protesti": 0,
+                        "pregiudizievoli": 0
+                    }
+                },
+                {
+                    "periodo": "2022-05-01/oggi",
+                    "nome": "James Wilson",
+                    "cf": "WLSJMS70A01Z404U",
+                    "carica": "AD",
+                    "eta_nomina": 52,
+                    "residenza": "UK",
+                    "altre_cariche": 3,
+                    "societa_cessate": 1
+                }
+            ],
+
+            "storia_capitale": [
+                {
+                    "data": "2020-05-01",
+                    "importo": 250000,
+                    "tipo": "COSTITUZIONE"
+                },
+                {
+                    "data": "2021-09-15",
+                    "importo": 2500000,
+                    "tipo": "AUMENTO_DENARO"
+                },
+                {
+                    "data": "2022-07-30",
+                    "importo": 5000000,
+                    "tipo": "AUMENTO_DENARO"
+                }
+            ],
+
+            "storia_soci": [
+                {
+                    "periodo": "2020-05-01/2021-09-14",
+                    "composizione": [
+                        {
+                            "nome": "Elena Bianchi",
+                            "quota": 35,
+                            "tipo": "PF",
+                            "eta": 42,
+                            "residenza": "Milano"
+                        },
+                        {
+                            "nome": "BIOTECH INVEST SRL",
+                            "quota": 65,
+                            "tipo": "PG",
+                            "sede": "Milano"
+                        }
+                    ]
+                },
+                {
+                    "periodo": "2021-09-15/2022-07-29",
+                    "composizione": [
+                        {
+                            "nome": "UK PHARMA LTD",
+                            "quota": 70,
+                            "tipo": "PG",
+                            "sede": "UK",
+                            "data_costituzione": "2015-08-01"
+                        },
+                        {
+                            "nome": "Elena Bianchi",
+                            "quota": 30,
+                            "tipo": "PF",
+                            "eta": 43,
+                            "residenza": "Milano"
+                        }
+                    ]
+                },
+                {
+                    "periodo": "2022-07-30/oggi",
+                    "composizione": [
+                        {
+                            "nome": "GLOBAL PHARMA PLC",
+                            "quota": 75,
+                            "tipo": "PG",
+                            "sede": "UK",
+                            "data_costituzione": "2010-05-15"
+                        },
+                        {
+                            "nome": "Elena Bianchi",
+                            "quota": 15,
+                            "tipo": "PF",
+                            "eta": 44,
+                            "residenza": "Siena"
+                        },
+                        {
+                            "nome": "LIFE SCIENCES FUND",
+                            "quota": 10,
+                            "tipo": "PG",
+                            "sede": "LU",
+                            "data_costituzione": "2018-06-01"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        "dipendenti": {
+            "2020": {
+                "Q1": {"numero": 15, "costo": 300000},
+                "Q2": {"numero": 25, "costo": 500000},
+                "Q3": {"numero": 35, "costo": 700000},
+                "Q4": {"numero": 45, "costo": 900000}
+            },
+            "2021": {
+                "Q1": {"numero": 50, "costo": 1000000},
+                "Q2": {"numero": 60, "costo": 1200000},
+                "Q3": {"numero": 70, "costo": 1400000},
+                "Q4": {"numero": 80, "costo": 1600000}
+            },
+            "2022": {
+                "Q1": {"numero": 85, "costo": 1700000},
+                "Q2": {"numero": 95, "costo": 1900000},
+                "Q3": {"numero": 105, "costo": 2100000},
+                "Q4": {"numero": 115, "costo": 2300000}
+            },
+            "2023": {
+                "Q1": {"numero": 125, "costo": 2500000},
+                "Q2": {"numero": 135, "costo": 2700000}
+            },
+            "dettaglio_attuale": {
+                "eta": {
+                    "18-25": 15,
+                    "26-35": 55,
+                    "36-45": 45,
+                    "over_45": 20
+                },
+                "nazionalita": {
+                    "italiana": 105,
+                    "ue": 20,
+                    "extra_ue": 10
+                },
+                "contratti": {
+                    "tempo_determinato": 25,
+                    "tempo_indeterminato": 110,
+                    "stage": 0
+                },
+                "orario": {
+                    "full_time": 120,
+                    "part_time": 15
+                },
+                "qualifiche": {
+                    "ricercatori": 45,
+                    "tecnici_laboratorio": 35,
+                    "quality_control": 20,
+                    "regulatory_affairs": 15,
+                    "clinical_research": 10,
+                    "amministrativi": 10
+                }
+            }
+        }
+}{
+    "mezzi": {
+        "2020": {
+            "Q4": {
+                "numero": 12,
+                "proprieta": 8,
+                "leasing": 4,
+                "valore": 3500000
+            }
+        },
+        "2021": {
+            "Q4": {
+                "numero": 20,
+                "proprieta": 14,
+                "leasing": 6,
+                "valore": 6500000
+            }
+        },
+        "2022": {
+            "Q4": {
+                "numero": 28,
+                "proprieta": 20,
+                "leasing": 8,
+                "valore": 9500000
+            }
+        },
+        "2023": {
+            "Q2": {
+                "numero": 35,
+                "proprieta": 25,
+                "leasing": 10,
+                "valore": 12500000
+            }
+        },
+        "dettaglio_attuale": {
+            "eta_media": 2.0,
+            "tipologia": {
+                "strumentazione_laboratorio": 15,
+                "macchinari_produzione": 10,
+                "apparecchiature_analisi": 8,
+                "clean_rooms": 2
+            },
+            "societa_leasing": [
+                {
+                    "nome": "SCIENTIFIC LEASE SPA",
+                    "numero_contratti": 6,
+                    "valore": 4500000
+                },
+                {
+                    "nome": "LAB EQUIPMENT LEASE",
+                    "numero_contratti": 4,
+                    "valore": 3000000
+                }
+            ]
+        }
+    },
+
+    "dati_economici": {
+        "fatturato_mensile": {
+            "2020": [200000, 250000, 300000, 350000, 400000, 450000,
+                    500000, 550000, 600000, 650000, 700000, 750000],
+            "2021": [800000, 850000, 900000, 950000, 1000000, 1100000,
+                    1200000, 1300000, 1400000, 1500000, 1600000, 1700000],
+            "2022": [1800000, 1900000, 2000000, 2100000, 2200000, 2300000,
+                    2400000, 2500000, 2600000, 2700000, 2800000, 2900000],
+            "2023": [3000000, 3100000, 3200000, 3300000, 3400000, 3500000]
+        },
+        "clienti": {
+            "2020": {
+                "numero_totale": 8,
+                "concentrazione_primo": 35,
+                "concentrazione_top3": 75,
+                "tipologia": {
+                    "aziende_farmaceutiche": 70,
+                    "ospedali": 20,
+                    "distributori": 10
+                }
+            },
+            "2021": {
+                "numero_totale": 12,
+                "concentrazione_primo": 30,
+                "concentrazione_top3": 65,
+                "tipologia": {
+                    "aziende_farmaceutiche": 65,
+                    "ospedali": 25,
+                    "distributori": 10
+                }
+            },
+            "2022": {
+                "numero_totale": 18,
+                "concentrazione_primo": 25,
+                "concentrazione_top3": 55,
+                "tipologia": {
+                    "aziende_farmaceutiche": 60,
+                    "ospedali": 30,
+                    "distributori": 10
+                }
+            },
+            "2023": {
+                "numero_totale": 25,
+                "concentrazione_primo": 20,
+                "concentrazione_top3": 45,
+                "tipologia": {
+                    "aziende_farmaceutiche": 55,
+                    "ospedali": 35,
+                    "distributori": 10
+                }
+            }
+        },
+        "fornitori": {
+            "2020": {
+                "numero_totale": 20,
+                "concentrazione_primo": 30
+            },
+            "2021": {
+                "numero_totale": 30,
+                "concentrazione_primo": 25
+            },
+            "2022": {
+                "numero_totale": 40,
+                "concentrazione_primo": 20
+            },
+            "2023": {
+                "numero_totale": 50,
+                "concentrazione_primo": 18
+            }
+        }
+    },
+
+    "dati_finanziari": {
+        "conti_correnti": [
+            {
+                "banca": "BANCA1",
+                "apertura": "2020-05-10",
+                "saldi_medi": {
+                    "2020": 800000,
+                    "2021": 2500000,
+                    "2022": 4500000,
+                    "2023": 6500000
+                }
+            },
+            {
+                "banca": "BANCA2",
+                "apertura": "2021-10-01",
+                "saldi_medi": {
+                    "2021": 1500000,
+                    "2022": 3500000,
+                    "2023": 5000000
+                }
+            }
+        ],
+        "movimentazione": {
+            "2021": {
+                "bonifici_italia": {
+                    "numero": 650,
+                    "importo_totale": 12000000
+                },
+                "bonifici_estero": {
+                    "numero": 120,
+                    "importo_totale": 5500000,
+                    "paesi": ["UK", "DE", "CH"]
+                }
+            },
+            "2022": {
+                "bonifici_italia": {
+                    "numero": 850,
+                    "importo_totale": 24000000
+                },
+                "bonifici_estero": {
+                    "numero": 180,
+                    "importo_totale": 9500000,
+                    "paesi": ["UK", "DE", "CH", "US", "FR"]
+                }
+            },
+            {
+                "dati_finanziari": {
+                    "movimentazione": {
+                        "2023": {
+                            "bonifici_italia": {
+                                "numero": 550,
+                                "importo_totale": 18000000
+                            },
+                            "bonifici_estero": {
+                                "numero": 150,
+                                "importo_totale": 8500000,
+                                "paesi": ["UK", "DE", "CH", "US", "FR", "BE"]
+                            }
+                        }
+                    },
+                    "finanziamenti": {
+                        "mutui": [
+                            {
+                                "tipo": "CHIROGRAFARIO",
+                                "banca": "BANCA1",
+                                "importo_iniziale": 3000000,
+                                "debito_residuo": 2400000,
+                                "accensione": "2022-06-15",
+                                "scadenza": "2027-06-14"
+                            }
+                        ],
+                        "leasing": {
+                            "2021": {"numero": 6, "debito_residuo": 3500000},
+                            "2022": {"numero": 8, "debito_residuo": 4800000},
+                            "2023": {"numero": 10, "debito_residuo": 6000000}
+                        },
+                        "altri_finanziamenti": [
+                            {
+                                "tipo": "VENTURE_CAPITAL",
+                                "finanziatore": "LIFE SCIENCES FUND",
+                                "importo": 2500000,
+                                "data": "2022-07-30"
+                            }
+                        ],
+                        "contributi_pubblici": [
+                            {
+                                "tipo": "MISE_RICERCA_FARMACEUTICA",
+                                "ente": "MISE",
+                                "importo": 1200000,
+                                "data": "2021-11-15",
+                                "durata_mesi": 24
+                            },
+                            {
+                                "tipo": "HORIZON_EUROPE",
+                                "ente": "EU COMMISSION",
+                                "importo": 1800000,
+                                "data": "2022-04-01",
+                                "durata_mesi": 36
+                            }
+                        ]
+                    }
+                },
+            
+                "eventi_negativi": {
+                    "protesti": [],
+                    "pregiudizievoli": [],
+                    "inps": {
+                        "ritardi_pagamento": [],
+                        "dipendenti_dichiarati": {
+                            "2021": {"media": 65, "var_max": 10},
+                            "2022": {"media": 100, "var_max": 12},
+                            "2023": {"media": 130, "var_max": 8}
+                        }
+                    },
+                    "infortuni": {
+                        "2021": {"numero": 2, "gravita": "LIEVE"},
+                        "2022": {"numero": 3, "gravita": "LIEVE"},
+                        "2023": {"numero": 1, "gravita": "LIEVE"}
+                    },
+                    "contenziosi": [
+                        {
+                            "data_apertura": "2022-10-15",
+                            "tipo": "BREVETTI",
+                            "stato": "IN_CORSO",
+                            "valore": 850000
+                        }
+                    ]
+                },
+            
+                "autorizzazioni_licenze": {
+                    "certificazioni_obbligatorie": [
+                        {
+                            "tipo": "GMP",
+                            "ente": "AIFA",
+                            "data_rilascio": "2020-09-15",
+                            "scadenza": "2023-09-14",
+                            "scope": "PRODUZIONE_FARMACI"
+                        },
+                        {
+                            "tipo": "GLP",
+                            "ente": "MINISTERO_SALUTE",
+                            "data_rilascio": "2020-10-01",
+                            "scadenza": "2023-09-30",
+                            "scope": "LABORATORI_RICERCA"
+                        }
+                    ],
+                    "certificazioni": [
+                        {
+                            "tipo": "ISO_9001",
+                            "ente": "DNV",
+                            "data_rilascio": "2021-03-15",
+                            "scadenza": "2024-03-14"
+                        },
+                        {
+                            "tipo": "ISO_13485",
+                            "ente": "DNV",
+                            "data_rilascio": "2021-03-15",
+                            "scadenza": "2024-03-14"
+                        },
+                        {
+                            "tipo": "ISO_17025",
+                            "ente": "ACCREDIA",
+                            "data_rilascio": "2022-01-10",
+                            "scadenza": "2025-01-09"
+                        }
+                    ],
+                    "brevetti": [
+                        {
+                            "tipo": "EUROPEO",
+                            "numero": "EP76543210",
+                            "data_deposito": "2021-07-15",
+                            "stato": "GRANTED",
+                            "paesi": ["IT", "DE", "FR", "UK", "ES", "CH"]
+                        },
+                        {
+                            "tipo": "USA",
+                            "numero": "US98765432",
+                            "data_deposito": "2022-02-10",
+                            "stato": "PENDING"
+                        }
+                    ]
+                },
+            
+                "operativita": {
+                    "zone_attivita": {
+                        "2021": ["Italia", "UK", "Germania"],
+                        "2022": ["Italia", "UK", "Germania", "Francia", "Svizzera"],
+                        "2023": ["UE", "UK", "Svizzera", "USA"]
+                    },
+                    "produzione": {
+                        "2021": {
+                            "lotti_prodotti": 120,
+                            "capacita_utilizzata": 0.65,
+                            "scarti": 0.02
+                        },
+                        "2022": {
+                            "lotti_prodotti": 250,
+                            "capacita_utilizzata": 0.75,
+                            "scarti": 0.015
+                        },
+                        "2023": {
+                            "lotti_prodotti": 380,
+                            "capacita_utilizzata": 0.85,
+                            "scarti": 0.01
+                        }
+                    },
+                    "materie_prime": {
+                        "2021": {
+                            "costo_totale": 4500000,
+                            "fornitori": 15,
+                            "paesi_origine": ["IT", "DE", "CH"]
+                        },
+                        "2022": {
+                            "costo_totale": 8500000,
+                            "fornitori": 20,
+                            "paesi_origine": ["IT", "DE", "CH", "UK"]
+                        },
+                        "2023": {
+                            "costo_totale": 12000000,
+                            "fornitori": 25,
+                            "paesi_origine": ["IT", "DE", "CH", "UK", "US"]
+                        }
+                    }
+                },
+            
+                "assicurazioni": {
+                    "polizze_attive": [
+                        {
+                            "tipo": "ALL_RISKS",
+                            "compagnia": "ALPHA INSURANCE",
+                            "massimale": 15000000,
+                            "premio_annuo": 120000,
+                            "sinistri": {
+                                "2021": {"numero": 1, "liquidato": 45000},
+                                "2022": {"numero": 2, "liquidato": 85000},
+                                "2023": {"numero": 1, "liquidato": 35000}
+                            }
+                        },
+                        {
+                            "tipo": "RC_PRODOTTI",
+                            "compagnia": "BETA INSURANCE",
+                            "massimale": 10000000,
+                            "premio_annuo": 150000,
+                            "sinistri": {
+                                "2021": {"numero": 0, "liquidato": 0},
+                                "2022": {"numero": 1, "liquidato": 120000},
+                                "2023": {"numero": 0, "liquidato": 0}
+                            }
+                        },
+                        {
+                            "tipo": "CLINICAL_TRIALS",
+                            "compagnia": "GAMMA INSURANCE",
+                            "massimale": 20000000,
+                            "premio_annuo": 180000,
+                            "sinistri": {
+                                "2021": {"numero": 0, "liquidato": 0},
+                                "2022": {"numero": 0, "liquidato": 0},
+                                "2023": {"numero": 0, "liquidato": 0}
+                            }
+                        }
+                    ]
+                },
+            
+                "analisi_web": {
+                    "sito": {
+                        "dominio": "pharmaresearch.com",
+                        "registrazione": "2020-05-05",
+                        "hosting": "AWS",
+                        "ultimo_aggiornamento": "2023-05-20",
+                        "lingue": ["IT", "EN", "DE", "FR"]
+                    },
+                    "social_media": {
+                        "linkedin": {
+                            "presente": true,
+                            "followers": 6500,
+                            "post_ultimi_6_mesi": 24,
+                            "dipendenti_collegati": 128
+                        },
+                        "researchgate": {
+                            "presente": true,
+                            "pubblicazioni": 15,
+                            "citazioni": 85
+                        }
+                    },
+                    "recensioni_online": {
+                        "google": {
+                            "numero": 25,
+                            "media": 4.6,
+                            "positive": 23
+                        },
+                        "glassdoor": {
+                            "numero": 18,
+                            "media": 4.3,
+                            "positive": 15
+                        }
+                    }
+                },
+            
+                "network_relazioni": {
+                    "collegamenti_societari": {
+                        "soci_attuali": {
+                            "altre_partecipazioni": [
+                                {
+                                    "societa": "BIOTECH LAB SRL",
+                                    "sede": "IT",
+                                    "quota": 25,
+                                    "stato": "ATTIVA"
+                                },
+                                {
+                                    "societa": "RESEARCH INNOVATIONS LTD",
+                                    "sede": "UK",
+                                    "quota": 30,
+                                    "stato": "ATTIVA"
+                                }
+                            ]
+                        },
+                        "amministratori": {
+                            "altre_cariche": [
+                                {
+                                    "societa": "PHARMA SOLUTIONS PLC",
+                                    "sede": "UK",
+                                    "carica": "Non-Executive Director",
+                                    "stato": "ATTIVA"
+                                },
+                                {
+                                    "societa": "EUROPEAN BIOTECH SA",
+                                    "sede": "CH",
+                                    "carica": "Board Member",
+                                    "stato": "ATTIVA"
+                                }
+                            ]
+                        }
+                    },
+                    "fornitori_strategici": [
+                        {
+                            "nome": "LAB SUPPLIERS INC",
+                            "tipologia": "REAGENTI",
+                            "esposizione": 3500000,
+                            "inizio_rapporto": "2020-07-15"
+                        },
+                        {
+                            "nome": "BIOTECH EQUIPMENT GMBH",
+                            "tipologia": "STRUMENTAZIONE",
+                            "esposizione": 4800000,
+                            "inizio_rapporto": "2021-03-01"
+                        }
+                    ],
+                    "clienti_principali": [
+                        {
+                            "nome": "GLOBAL PHARMA PLC",
+                            "settore": "FARMACEUTICO",
+                            "fatturato_annuo": 8500000,
+                            "inizio_rapporto": "2021-01-15",
+                            "tipo_contratto": "R&D_PARTNERSHIP"
+                        },
+                        {
+                            "nome": "EUROPEAN HOSPITALS GROUP",
+                            "settore": "SANITARIO",
+                            "fatturato_annuo": 6500000,
+                            "inizio_rapporto": "2021-06-01",
+                            "tipo_contratto": "FORNITURA_CONTINUATIVA"
+                        }
+                    ],
+                    "partnership_scientifiche": [
+                        {
+                            "partner": "UNIVERSITÀ DI SIENA",
+                            "tipo": "RICERCA_SVILUPPO",
+                            "progetto": "DRUG_DISCOVERY",
+                            "inizio": "2021-09-01",
+                            "durata_mesi": 36
+                        },
+                        {
+                            "partner": "IMPERIAL COLLEGE LONDON",
+                            "tipo": "CLINICAL_RESEARCH",
+                            "progetto": "FASE_2_TRIAL",
+                            "inizio": "2022-03-01",
+                            "durata_mesi": 24
+                        }
+                    ]
+                }
+            }

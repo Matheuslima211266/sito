@@ -1,0 +1,531 @@
+{
+    "azienda_4": {
+        "info_base": {
+            "nome": "SMART ELECTRONICS SPA",
+            "codice_fiscale": "12345678905",
+            "p_iva": "12345678905",
+            "data_costituzione": "2020-03-15",
+            "sede_legale": {
+                "indirizzo": "Via dell'Innovazione 234",
+                "comune": "Ivrea",
+                "provincia": "TO",
+                "regione": "Piemonte",
+                "data_trasferimento": "2022-06-10",
+                "sede_precedente": {
+                    "indirizzo": "Via Tecnologica 45",
+                    "comune": "Milano",
+                    "provincia": "MI"
+                }
+            },
+            "sedi_operative": [
+                {
+                    "indirizzo": "Via dei Semiconduttori 78",
+                    "comune": "Ivrea",
+                    "provincia": "TO",
+                    "data_apertura": "2021-05-01",
+                    "dipendenti": 45,
+                    "tipo": "STABILIMENTO_PRODUTTIVO"
+                },
+                {
+                    "indirizzo": "Via della Ricerca 156",
+                    "comune": "Milano",
+                    "provincia": "MI",
+                    "data_apertura": "2022-03-01",
+                    "dipendenti": 25,
+                    "tipo": "R&D_CENTER"
+                }
+            ],
+            "ateco": {
+                "principale": "26.20",
+                "secondari": ["26.30", "62.01"],
+                "storia": [
+                    {
+                        "data": "2020-03-15",
+                        "codice": "26.20"
+                    },
+                    {
+                        "data": "2021-08-01",
+                        "codice": "62.01",
+                        "aggiunto": true
+                    }
+                ]
+            },
+            "forma_giuridica": {
+                "attuale": "SPA",
+                "variazioni": [
+                    {
+                        "data": "2020-03-15",
+                        "tipo": "SRL STARTUP INNOVATIVA"
+                    },
+                    {
+                        "data": "2022-03-01",
+                        "tipo": "SPA"
+                    }
+                ]
+            }
+        },
+
+        "governance": {
+            "storia_amministratori": [
+                {
+                    "periodo": "2020-03-15/2022-02-28",
+                    "nome": "Roberto Neri",
+                    "cf": "NRERRT75M01L219X",
+                    "carica": "AU",
+                    "eta_nomina": 45,
+                    "altre_cariche": 2,
+                    "precedenti": {
+                        "protesti": 0,
+                        "pregiudizievoli": 0
+                    }
+                },
+                {
+                    "periodo": "2022-03-01/oggi",
+                    "nome": "Michael Chen",
+                    "cf": "CHNMHL70A01Z210Y",
+                    "carica": "AD",
+                    "eta_nomina": 52,
+                    "residenza": "US",
+                    "altre_cariche": 3,
+                    "societa_cessate": 1
+                }
+            ],
+
+            "storia_capitale": [
+                {
+                    "data": "2020-03-15",
+                    "importo": 150000,
+                    "tipo": "COSTITUZIONE"
+                },
+                {
+                    "data": "2021-07-15",
+                    "importo": 1500000,
+                    "tipo": "AUMENTO_DENARO"
+                },
+                {
+                    "data": "2022-03-01",
+                    "importo": 5000000,
+                    "tipo": "AUMENTO_DENARO"
+                }
+            ],
+
+            "storia_soci": [
+                {
+                    "periodo": "2020-03-15/2021-07-14",
+                    "composizione": [
+                        {
+                            "nome": "Roberto Neri",
+                            "quota": 35,
+                            "tipo": "PF",
+                            "eta": 45,
+                            "residenza": "Milano"
+                        },
+                        {
+                            "nome": "TECH VENTURES SRL",
+                            "quota": 65,
+                            "tipo": "PG",
+                            "sede": "Milano"
+                        }
+                    ]
+                },
+                {
+                    "periodo": "2021-07-15/2022-02-28",
+                    "composizione": [
+                        {
+                            "nome": "ASIAN TECH INVESTMENTS LTD",
+                            "quota": 70,
+                            "tipo": "PG",
+                            "sede": "HK",
+                            "data_costituzione": "2015-06-01"
+                        },
+                        {
+                            "nome": "Roberto Neri",
+                            "quota": 30,
+                            "tipo": "PF",
+                            "eta": 46,
+                            "residenza": "Milano"
+                        }
+                    ]
+                },
+                {
+                    "periodo": "2022-03-01/oggi",
+                    "composizione": [
+                        {
+                            "nome": "GLOBAL ELECTRONICS CORP",
+                            "quota": 75,
+                            "tipo": "PG",
+                            "sede": "US",
+                            "data_costituzione": "2010-04-15"
+                        },
+                        {
+                            "nome": "Roberto Neri",
+                            "quota": 15,
+                            "tipo": "PF",
+                            "eta": 47,
+                            "residenza": "Milano"
+                        },
+                        {
+                            "nome": "INNOVATION CAPITAL SGR",
+                            "quota": 10,
+                            "tipo": "PG",
+                            "sede": "IT",
+                            "data_costituzione": "2018-01-01"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        "dipendenti": {
+            "2020": {
+                "Q1": {"numero": 12, "costo": 180000},
+                "Q2": {"numero": 18, "costo": 270000},
+                "Q3": {"numero": 25, "costo": 375000},
+                "Q4": {"numero": 35, "costo": 525000}
+            },
+            "2021": {
+                "Q1": {"numero": 45, "costo": 675000},
+                "Q2": {"numero": 55, "costo": 825000},
+                "Q3": {"numero": 65, "costo": 975000},
+                "Q4": {"numero": 75, "costo": 1125000}
+            },
+            "2022": {
+                "Q1": {"numero": 85, "costo": 1275000},
+                "Q2": {"numero": 95, "costo": 1425000},
+                "Q3": {"numero": 105, "costo": 1575000},
+                "Q4": {"numero": 120, "costo": 1800000}
+            },
+            "2023": {
+                "Q1": {"numero": 135, "costo": 2025000},
+                "Q2": {"numero": 150, "costo": 2250000}
+            },
+            "dettaglio_attuale": {
+                "eta": {
+                    "18-25": 25,
+                    "26-35": 65,
+                    "36-45": 45,
+                    "over_45": 15
+                },
+                "nazionalita": {
+                    "italiana": 110,
+                    "ue": 25,
+                    "extra_ue": 15
+                },
+                "contratti": {
+                    "tempo_determinato": 35,
+                    "tempo_indeterminato": 115,
+                    "stage": 0
+                },
+                "orario": {
+                    "full_time": 135,
+                    "part_time": 15
+                },
+                "qualifiche": {
+                    "ingegneri_elettronici": 45,
+                    "sviluppatori_software": 35,
+                    "tecnici_produzione": 40,
+                    "ricercatori": 15,
+                    "amministrativi": 15
+                }
+            }
+        },
+
+        "mezzi": {
+            "2020": {
+                "Q4": {
+                    "numero": 8,
+                    "proprieta": 6,
+                    "leasing": 2,
+                    "valore": 2500000
+                }
+            },
+            "2021": {
+                "Q4": {
+                    "numero": 15,
+                    "proprieta": 10,
+                    "leasing": 5,
+                    "valore": 5500000
+                }
+            },
+            "2022": {
+                "Q4": {
+                    "numero": 25,
+                    "proprieta": 15,
+                    "leasing": 10,
+                    "valore": 9500000
+                }
+            },
+            "2023": {
+                "Q2": {
+                    "numero": 35,
+                    "proprieta": 20,
+                    "leasing": 15,
+                    "valore": 12500000
+                }
+            },
+            "dettaglio_attuale": {
+                "eta_media": 2.0,
+                "tipologia": {
+                    "linee_produzione": 6,
+                    "macchine_test": 12,
+                    "laboratori_R&D": 4,
+                    "sistemi_automazione": 13
+                },
+                "societa_leasing": [
+                    {
+                        "nome": "TECH LEASE SPA",
+                        "numero_contratti": 8,
+                        "valore": 4500000
+                    },
+                    {
+                        "nome": "INDUSTRIAL LEASE",
+                        "numero_contratti": 7,
+                        "valore": 3500000
+                    }
+                ]
+            }
+        },
+
+        "dati_economici": {
+            "fatturato_mensile": {
+                "2020": [300000, 350000, 400000, 450000, 500000, 550000,
+                        600000, 650000, 700000, 750000, 800000, 850000],
+                "2021": [900000, 950000, 1000000, 1100000, 1200000, 1300000,
+                        1400000, 1500000, 1600000, 1700000, 1800000, 1900000],
+                "2022": [2000000, 2100000, 2200000, 2300000, 2400000, 2500000,
+                        2600000, 2700000, 2800000, 2900000, 3000000, 3100000],
+                "2023": [3200000, 3300000, 3400000, 3500000, 3600000, 3700000]
+            },
+            "clienti": {
+                "2020": {
+                    "numero_totale": 15,
+                    "concentrazione_primo": 25,
+                    "concentrazione_top3": 55,
+                    "tipologia": {
+                        "produttori_elettronica": 60,
+                        "system_integrator": 40
+                    }
+                },
+                "2021": {
+                    "numero_totale": 25,
+                    "concentrazione_primo": 20,
+                    "concentrazione_top3": 45,
+                    "tipologia": {
+                        "produttori_elettronica": 50,
+                        "system_integrator": 50
+                    }
+                },
+                "2022": {
+                    "numero_totale": 40,
+                    "concentrazione_primo": 18,
+                    "concentrazione_top3": 40,
+                    "tipologia": {
+                        "produttori_elettronica": 45,
+                        "system_integrator": 55
+                    }
+                },
+                "2023": {
+                    "numero_totale": 55,
+                    "concentrazione_primo": 15,
+                    "concentrazione_top3": 35,
+                    "tipologia": {
+                        "produttori_elettronica": 40,
+                        "system_integrator": 60
+                    }
+                }
+            }
+        },
+
+        "dati_finanziari": {
+            "conti_correnti": [
+                {
+                    "banca": "BANCA1",
+                    "apertura": "2020-03-20",
+                    "saldi_medi": {
+                        "2020": 850000,
+                        "2021": 2500000,
+                        "2022": 4500000,
+                        "2023": 6000000
+                    }
+                },
+                {
+                    "banca": "BANCA2",
+                    "apertura": "2021-08-01",
+                    "saldi_medi": {
+                        "2021": 1500000,
+                        "2022": 3500000,
+                        "2023": 4500000
+                    }
+                }
+            ],
+            "movimentazione": {
+                "2021": {
+                    "bonifici_italia": {
+                        "numero": 850,
+                        "importo_totale": 12000000
+                    },
+                    "bonifici_estero": {
+                        "numero": 120,
+                        "importo_totale": 5500000,
+                        "paesi": ["US", "CN", "TW"]
+                    }
+                },
+                "2022": {
+                    "bonifici_italia": {
+                        "numero": 1200,
+                        "importo_totale": 25000000
+                    },
+                    "bonifici_estero": {
+                        "numero": 250,
+                        "importo_totale": 12000000,
+                        "paesi": ["US", "CN", "TW", "KR", "JP"]
+                    }
+                },
+                "2023": {
+                    "bonifici_italia": {
+                        "numero": 750,
+                        "importo_totale": 18000000
+                    },
+                    "bonifici_estero": {
+                        "numero": 180,
+                        "importo_totale": 9000000,
+                        "paesi": ["US", "CN", "TW", "KR", "JP", "SG"]
+                    }
+                }
+            },
+            {
+                "dati_finanziari": {
+                    "finanziamenti": {
+                        "mutui": [
+                            {
+                                "tipo": "CHIROGRAFARIO",
+                                "banca": "BANCA1",
+                                "importo_iniziale": 3000000,
+                                "debito_residuo": 2400000,
+                                "accensione": "2022-05-15",
+                                "scadenza": "2027-05-15"
+                            }
+                        ],
+                        "leasing": {
+                            "2021": {"numero": 5, "debito_residuo": 2500000},
+                            "2022": {"numero": 10, "debito_residuo": 4800000},
+                            "2023": {"numero": 15, "debito_residuo": 7200000}
+                        },
+                        "altri_finanziamenti": [
+                            {
+                                "tipo": "VENTURE_CAPITAL",
+                                "finanziatore": "INNOVATION CAPITAL SGR",
+                                "importo": 2000000,
+                                "data": "2022-03-01"
+                            },
+                            {
+                                "tipo": "SIMEST",
+                                "importo": 1500000,
+                                "data": "2022-09-15",
+                                "scopo": "INTERNAZIONALIZZAZIONE"
+                            }
+                        ]
+                    }
+                }
+            }
+            {
+                "dati_economici": {
+                    "fornitori": {
+                        "2020": {
+                            "numero_totale": 25,
+                            "concentrazione_primo": 35
+                        },
+                        "2021": {
+                            "numero_totale": 40,
+                            "concentrazione_primo": 30
+                        },
+                        "2022": {
+                            "numero_totale": 55,
+                            "concentrazione_primo": 25
+                        },
+                        "2023": {
+                            "numero_totale": 70,
+                            "concentrazione_primo": 20
+                        }
+                    }
+                },
+            
+                "dati_finanziari": {
+                    "finanziamenti": {
+                        "contributi_pubblici": [
+                            {
+                                "tipo": "MISE_INDUSTRIA_4.0",
+                                "ente": "MISE",
+                                "importo": 850000,
+                                "data": "2021-06-15",
+                                "durata_mesi": 24
+                            },
+                            {
+                                "tipo": "HORIZON_EUROPE",
+                                "ente": "EU COMMISSION",
+                                "importo": 1200000,
+                                "data": "2022-03-01",
+                                "durata_mesi": 36
+                            }
+                        ]
+                    }
+                },
+            
+                "autorizzazioni_licenze": {
+                    "certificazioni_obbligatorie": [
+                        {
+                            "tipo": "CE_MARKING",
+                            "ente": "NOTIFIED_BODY_0477",
+                            "data_rilascio": "2020-05-15",
+                            "scadenza": "2025-05-14",
+                            "prodotti": ["DEVICE_A", "DEVICE_B"]
+                        },
+                        {
+                            "tipo": "FCC_CERTIFICATION",
+                            "ente": "FCC",
+                            "data_rilascio": "2021-03-01",
+                            "scadenza": "2024-02-29",
+                            "scope": "ELECTRONIC_DEVICES"
+                        }
+                    ]
+                },
+            
+                "operativita": {
+                    "materie_prime": {
+                        "2021": {
+                            "costo_totale": 4500000,
+                            "fornitori": 12,
+                            "paesi_origine": ["TW", "KR", "CN"]
+                        },
+                        "2022": {
+                            "costo_totale": 8500000,
+                            "fornitori": 18,
+                            "paesi_origine": ["TW", "KR", "CN", "JP"]
+                        },
+                        "2023": {
+                            "costo_totale": 12000000,
+                            "fornitori": 22,
+                            "paesi_origine": ["TW", "KR", "CN", "JP", "SG"]
+                        }
+                    }
+                },
+            
+                "network_relazioni": {
+                    "clienti_principali": [
+                        {
+                            "nome": "GLOBAL ELECTRONICS MANUFACTURING",
+                            "settore": "ELETTRONICA",
+                            "fatturato_annuo": 8500000,
+                            "inizio_rapporto": "2021-03-15",
+                            "tipo_contratto": "FORNITURA_CONTINUATIVA"
+                        },
+                        {
+                            "nome": "EUROPEAN TECH SOLUTIONS",
+                            "settore": "SYSTEM_INTEGRATION",
+                            "fatturato_annuo": 6500000,
+                            "inizio_rapporto": "2021-09-01",
+                            "tipo_contratto": "PARTNERSHIP_STRATEGICA"
+                        }
+                    ]
+                }
+            } 

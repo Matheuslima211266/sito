@@ -1,0 +1,723 @@
+{
+    "azienda_2": {
+        "info_base": {
+            "nome": "MEDICAL DEVICES ITALIA SRL",
+            "codice_fiscale": "12345678903",
+            "p_iva": "12345678903",
+            "data_costituzione": "2020-01-20",
+            "sede_legale": {
+                "indirizzo": "Via delle Scienze Mediche 78",
+                "comune": "Modena",
+                "provincia": "MO",
+                "regione": "Emilia-Romagna",
+                "data_trasferimento": "2022-04-15",
+                "sede_precedente": {
+                    "indirizzo": "Via dell'Università 12",
+                    "comune": "Bologna",
+                    "provincia": "BO"
+                }
+            },
+            "sedi_operative": [
+                {
+                    "indirizzo": "Via della Ricerca 45",
+                    "comune": "Mirandola",
+                    "provincia": "MO",
+                    "data_apertura": "2021-03-01",
+                    "dipendenti": 40,
+                    "tipo": "STABILIMENTO_PRODUTTIVO"
+                },
+                {
+                    "indirizzo": "Via dell'Innovazione 89",
+                    "comune": "Milano",
+                    "provincia": "MI",
+                    "data_apertura": "2022-09-01",
+                    "dipendenti": 20,
+                    "tipo": "R&D_CENTER"
+                }
+            ],
+            "ateco": {
+                "principale": "32.50",
+                "secondari": ["46.46.3", "72.19.09"],
+                "storia": [
+                    {
+                        "data": "2020-01-20",
+                        "codice": "32.50"
+                    },
+                    {
+                        "data": "2021-07-01",
+                        "codice": "72.19.09",
+                        "aggiunto": true
+                    }
+                ]
+            },
+            "forma_giuridica": {
+                "attuale": "SRL",
+                "variazioni": [
+                    {
+                        "data": "2020-01-20",
+                        "tipo": "SRL STARTUP INNOVATIVA"
+                    },
+                    {
+                        "data": "2022-01-20",
+                        "tipo": "SRL"
+                    }
+                ]
+            }
+        },
+
+        "governance": {
+            "storia_amministratori": [
+                {
+                    "periodo": "2020-01-20/2021-12-31",
+                    "nome": "Anna Bianchi",
+                    "cf": "BNCNNA80A41F257X",
+                    "carica": "AU",
+                    "eta_nomina": 40,
+                    "altre_cariche": 1,
+                    "precedenti": {
+                        "protesti": 0,
+                        "pregiudizievoli": 0
+                    }
+                },
+                {
+                    "periodo": "2022-01-01/oggi",
+                    "nome": "Hans Mueller",
+                    "cf": "MLLHNS75A01Z112U",
+                    "carica": "AD",
+                    "eta_nomina": 47,
+                    "residenza": "DE",
+                    "altre_cariche": 3,
+                    "societa_cessate": 0
+                }
+            ],
+
+            "storia_capitale": [
+                {
+                    "data": "2020-01-20",
+                    "importo": 100000,
+                    "tipo": "COSTITUZIONE"
+                },
+                {
+                    "data": "2021-06-15",
+                    "importo": 1000000,
+                    "tipo": "AUMENTO_DENARO"
+                },
+                {
+                    "data": "2022-09-30",
+                    "importo": 3000000,
+                    "tipo": "AUMENTO_DENARO"
+                }
+            ],
+
+            "storia_soci": [
+                {
+                    "periodo": "2020-01-20/2021-06-14",
+                    "composizione": [
+                        {
+                            "nome": "Anna Bianchi",
+                            "quota": 40,
+                            "tipo": "PF",
+                            "eta": 40,
+                            "residenza": "Bologna"
+                        },
+                        {
+                            "nome": "MEDTECH INVEST SRL",
+                            "quota": 60,
+                            "tipo": "PG",
+                            "sede": "Milano"
+                        }
+                    ]
+                },
+                {
+                    "periodo": "2021-06-15/2022-09-29",
+                    "composizione": [
+                        {
+                            "nome": "GERMAN HEALTH TECH GMBH",
+                            "quota": 70,
+                            "tipo": "PG",
+                            "sede": "DE",
+                            "data_costituzione": "2015-05-01"
+                        },
+                        {
+                            "nome": "Anna Bianchi",
+                            "quota": 30,
+                            "tipo": "PF",
+                            "eta": 41,
+                            "residenza": "Bologna"
+                        }
+                    ]
+                },
+                {
+                    "periodo": "2022-09-30/oggi",
+                    "composizione": [
+                        {
+                            "nome": "MEDICAL INNOVATION AG",
+                            "quota": 85,
+                            "tipo": "PG",
+                            "sede": "DE",
+                            "data_costituzione": "2010-03-15"
+                        },
+                        {
+                            "nome": "Anna Bianchi",
+                            "quota": 15,
+                            "tipo": "PF",
+                            "eta": 42,
+                            "residenza": "Bologna"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        "dipendenti": {
+            "2020": {
+                "Q1": {"numero": 8, "costo": 120000},
+                "Q2": {"numero": 12, "costo": 180000},
+                "Q3": {"numero": 15, "costo": 225000},
+                "Q4": {"numero": 20, "costo": 300000}
+            },
+            "2021": {
+                "Q1": {"numero": 25, "costo": 375000},
+                "Q2": {"numero": 35, "costo": 525000},
+                "Q3": {"numero": 45, "costo": 675000},
+                "Q4": {"numero": 55, "costo": 825000}
+            },
+            "2022": {
+                "Q1": {"numero": 65, "costo": 975000},
+                "Q2": {"numero": 75, "costo": 1125000},
+                "Q3": {"numero": 85, "costo": 1275000},
+                "Q4": {"numero": 95, "costo": 1425000}
+            },
+            "2023": {
+                "Q1": {"numero": 105, "costo": 1575000},
+                "Q2": {"numero": 120, "costo": 1800000}
+            },
+            "dettaglio_attuale": {
+                "eta": {
+                    "18-25": 15,
+                    "26-35": 45,
+                    "36-45": 40,
+                    "over_45": 20
+                },
+                "nazionalita": {
+                    "italiana": 95,
+                    "ue": 20,
+                    "extra_ue": 5
+                },
+                "contratti": {
+                    "tempo_determinato": 25,
+                    "tempo_indeterminato": 95,
+                    "stage": 0
+                },
+                "orario": {
+                    "full_time": 110,
+                    "part_time": 10
+                },
+                "qualifiche": {
+                    "ingegneri_biomedici": 35,
+                    "tecnici_produzione": 45,
+                    "ricercatori": 20,
+                    "quality_assurance": 10,
+                    "regulatory_affairs": 5,
+                    "amministrativi": 5
+                }
+            }
+        },
+
+        "mezzi": {
+            "2020": {
+                "Q4": {
+                    "numero": 15,
+                    "proprieta": 12,
+                    "leasing": 3,
+                    "valore": 1500000
+                }
+            },
+            "2021": {
+                "Q4": {
+                    "numero": 25,
+                    "proprieta": 20,
+                    "leasing": 5,
+                    "valore": 2500000
+                }
+            },
+            "2022": {
+                "Q4": {
+                    "numero": 35,
+                    "proprieta": 28,
+                    "leasing": 7,
+                    "valore": 3500000
+                }
+            },
+            "2023": {
+                "Q2": {
+                    "numero": 45,
+                    "proprieta": 35,
+                    "leasing": 10,
+                    "valore": 4500000
+                }
+            },
+            "dettaglio_attuale": {
+                "eta_media": 2.5,
+                "tipologia": {
+                    "macchinari_produzione": 25,
+                    "attrezzature_laboratorio": 15,
+                    "strumenti_test": 5
+                },
+                "societa_leasing": [
+                    {
+                        "nome": "MEDICAL LEASE SPA",
+                        "numero_contratti": 7,
+                        "valore": 2100000
+                    },
+                    {
+                        "nome": "TECH RENTAL SRL",
+                        "numero_contratti": 3,
+                        "valore": 900000
+                    }
+                ]
+            }
+        },
+
+        "dati_economici": {
+            "fatturato_mensile": {
+                "2020": [150000, 180000, 200000, 220000, 250000, 280000,
+                        300000, 320000, 350000, 380000, 400000, 450000],
+                "2021": [500000, 550000, 600000, 650000, 700000, 750000,
+                        800000, 850000, 900000, 950000, 1000000, 1100000],
+                "2022": [1200000, 1300000, 1400000, 1500000, 1600000, 1700000,
+                        1800000, 1900000, 2000000, 2100000, 2200000, 2300000],
+                "2023": [2400000, 2500000, 2600000, 2700000, 2800000, 2900000]
+            },
+            "clienti": {
+                "2020": {
+                    "numero_totale": 10,
+                    "concentrazione_primo": 30,
+                    "concentrazione_top3": 65
+                },
+                "2021": {
+                    "numero_totale": 20,
+                    "concentrazione_primo": 25,
+                    "concentrazione_top3": 55
+                },
+                "2022": {
+                    "numero_totale": 35,
+                    "concentrazione_primo": 20,
+                    "concentrazione_top3": 45
+                },
+                "2023": {
+                    "numero_totale": 50,
+                    "concentrazione_primo": 18,
+                    "concentrazione_top3": 40
+                }
+            },
+            "fornitori": {
+                "2020": {
+                    "numero_totale": 15,
+                    "concentrazione_primo": 35
+                },
+                "2021": {
+                    "numero_totale": 25,
+                    "concentrazione_primo": 30
+                },
+                "2022": {
+                    "numero_totale": 35,
+                    "concentrazione_primo": 25
+                },
+                "2023": {
+                    "numero_totale": 45,
+                    "concentrazione_primo": 20
+                }
+            }
+        },
+
+        "dati_finanziari": {
+            "conti_correnti": [
+                {
+                    "banca": "BANCA1",
+                    "apertura": "2020-01-25",
+                    "saldi_medi": {
+                        "2020": 350000,
+                        "2021": 850000,
+                        "2022": 1500000,
+                        "2023": 2200000
+                    }
+                },
+                {
+                    "banca": "BANCA2",
+                    "apertura": "2021-07-01",
+                    "saldi_medi": {
+                        "2021": 500000,
+                        "2022": 1200000,
+                        "2023": 1800000
+                    }
+                }
+            ],
+            "movimentazione": {
+                "2021": {
+                    "bonifici_italia": {
+                        "numero": 850,
+                        "importo_totale": 7500000
+                    },
+                    "bonifici_estero": {
+                        "numero": 120,
+                        "importo_totale": 2500000,
+                        "paesi": ["DE", "FR", "CH"]
+                    }
+                },
+                "2022": {
+                    "bonifici_italia": {
+                        "numero": 1200,
+                        "importo_totale": 15000000
+                    },
+                    "bonifici_estero": {
+                        "numero": 250,
+                        "importo_totale": 6000000,
+                        "paesi": ["DE", "FR", "CH", "BE", "NL"]
+                    }
+                },
+                "2023": {
+                    "bonifici_italia": {
+                        "numero": 800,
+                        "importo_totale": 12000000
+                    },
+                    "bonifici_estero": {
+                        "numero": 180,
+                        "importo_totale": 5000000,
+                        "paesi": ["DE", "FR", "CH", "BE", "AT"]
+                    }
+                }
+            },
+            "finanziamenti": {
+                "leasing": {
+                    "2021": {"numero": 5, "debito_residuo": 1800000},
+                    "2022": {"numero": 7, "debito_residuo": 2500000},
+                    "2023": {"numero": 10, "debito_residuo": 3000000}
+                },
+                "mutui": [
+                    {
+                        "tipo": "CHIROGRAFARIO",
+                        "banca": "BANCA1",
+                        "importo_iniziale": 2000000,
+                        "debito_residuo": 1600000,
+                        "accensione": "2022-04-15",
+                        "scadenza": "2027-04-15"
+                    }
+                ],
+                "altri_finanziamenti": [
+                    {
+                        "tipo": "VENTURE_CAPITAL",
+                        "finanziatore": "MEDICAL INNOVATION AG",
+                        "importo": 3000000,
+                        "data": "2022-09-30"
+                    }
+
+                    {
+                    ],
+                    "contributi_pubblici": [
+                        {
+                            "tipo": "HORIZON_EUROPE",
+                            "ente": "EU COMMISSION",
+                            "importo": 850000,
+                            "data": "2022-03-15",
+                            "durata_mesi": 36
+                        },
+                        {
+                            "tipo": "MISE_INNOVAZIONE",
+                            "ente": "MISE",
+                            "importo": 400000,
+                            "data": "2021-09-01",
+                            "durata_mesi": 24
+                        }
+                    ]
+                },
+        
+                "eventi_negativi": {
+                    "protesti": [],
+                    "pregiudizievoli": [],
+                    "inps": {
+                        "ritardi_pagamento": [],
+                        "dipendenti_dichiarati": {
+                            "2021": {"media": 40, "var_max": 8},
+                            "2022": {"media": 80, "var_max": 15},
+                            "2023": {"media": 112, "var_max": 12}
+                        }
+                    },
+                    "infortuni": {
+                        "2021": {"numero": 1, "gravita": "LIEVE"},
+                        "2022": {"numero": 2, "gravita": "LIEVE"},
+                        "2023": {"numero": 1, "gravita": "LIEVE"}
+                    },
+                    "contenziosi": [
+                        {
+                            "data_apertura": "2022-11-10",
+                            "tipo": "BREVETTI",
+                            "stato": "IN_CORSO",
+                            "valore": 350000
+                        }
+                    ]
+                },
+        
+                "autorizzazioni_licenze": {
+                    "certificazioni_obbligatorie": [
+                        {
+                            "tipo": "CE_MEDICAL_DEVICES",
+                            "ente": "NOTIFIED_BODY_0477",
+                            "data_rilascio": "2020-06-15",
+                            "scadenza": "2025-06-14",
+                            "prodotti": ["DISPOSITIVO_A", "DISPOSITIVO_B"]
+                        },
+                        {
+                            "tipo": "ISO_13485",
+                            "ente": "BSI",
+                            "data_rilascio": "2020-09-01",
+                            "scadenza": "2023-08-31",
+                            "scope": "DESIGN_AND_MANUFACTURING"
+                        }
+                    ],
+                    "certificazioni_volontarie": [
+                        {
+                            "tipo": "ISO_9001",
+                            "ente": "DNV",
+                            "data_rilascio": "2021-03-15",
+                            "scadenza": "2024-03-14"
+                        },
+                        {
+                            "tipo": "ISO_14001",
+                            "ente": "DNV",
+                            "data_rilascio": "2022-01-10",
+                            "scadenza": "2025-01-09"
+                        }
+                    ],
+                    "autorizzazioni_ministero": [
+                        {
+                            "tipo": "PRODUZIONE_DISPOSITIVI_MEDICI",
+                            "numero": "MED/123/2020",
+                            "data_rilascio": "2020-04-01",
+                            "rinnovo_annuale": true
+                        }
+                    ],
+                    "brevetti": [
+                        {
+                            "tipo": "EUROPEO",
+                            "numero": "EP12345678",
+                            "data_deposito": "2021-05-15",
+                            "stato": "GRANTED",
+                            "paesi": ["IT", "DE", "FR", "UK", "ES"]
+                        },
+                        {
+                            "tipo": "ITALIANO",
+                            "numero": "IT20210000123",
+                            "data_deposito": "2022-03-10",
+                            "stato": "PENDING"
+                        }
+                    ]
+                },
+        
+                "operativita": {
+                    "zone_attivita": {
+                        "2021": ["Italia", "Germania", "Francia"],
+                        "2022": ["Italia", "Germania", "Francia", "Benelux", "Spagna"],
+                        "2023": ["UE", "Svizzera", "UK"]
+                    },
+                    "tipologia_prodotti": {
+                        "2021": {
+                            "dispositivi_classe_1": 70,
+                            "dispositivi_classe_2a": 30,
+                            "settori": ["ortopedia", "chirurgia"]
+                        },
+                        "2022": {
+                            "dispositivi_classe_1": 60,
+                            "dispositivi_classe_2a": 30,
+                            "dispositivi_classe_2b": 10,
+                            "settori": ["ortopedia", "chirurgia", "diagnostica"]
+                        },
+                        "2023": {
+                            "dispositivi_classe_1": 50,
+                            "dispositivi_classe_2a": 35,
+                            "dispositivi_classe_2b": 15,
+                            "settori": ["ortopedia", "chirurgia", "diagnostica", "riabilitazione"]
+                        }
+                    },
+                    "produzione": {
+                        "2021": {
+                            "volume_pezzi": 50000,
+                            "capacita_utilizzata": 0.65,
+                            "scarti": 0.03
+                        },
+                        "2022": {
+                            "volume_pezzi": 120000,
+                            "capacita_utilizzata": 0.75,
+                            "scarti": 0.025
+                        },
+                        "2023": {
+                            "volume_pezzi": 180000,
+                            "capacita_utilizzata": 0.85,
+                            "scarti": 0.02
+                        }
+                    },
+                    "materie_prime": {
+                        "2021": {
+                            "costo_totale": 2500000,
+                            "fornitori": 8,
+                            "paesi_origine": ["IT", "DE"]
+                        },
+                        "2022": {
+                            "costo_totale": 5500000,
+                            "fornitori": 12,
+                            "paesi_origine": ["IT", "DE", "FR"]
+                        },
+                        "2023": {
+                            "costo_totale": 8000000,
+                            "fornitori": 15,
+                            "paesi_origine": ["IT", "DE", "FR", "CH"]
+                        }
+                    }
+                },
+        
+                "assicurazioni": {
+                    "polizze_attive": [
+                        {
+                            "tipo": "RC Prodotti",
+                            "compagnia": "ALPHA INSURANCE",
+                            "massimale": 10000000,
+                            "premio_annuo": 150000,
+                            "sinistri": {
+                                "2021": {"numero": 0, "liquidato": 0},
+                                "2022": {"numero": 1, "liquidato": 75000},
+                                "2023": {"numero": 0, "liquidato": 0}
+                            }
+                        },
+                        {
+                            "tipo": "Clinical Trials",
+                            "compagnia": "BETA INSURANCE",
+                            "massimale": 5000000,
+                            "premio_annuo": 80000,
+                            "sinistri": {
+                                "2021": {"numero": 0, "liquidato": 0},
+                                "2022": {"numero": 0, "liquidato": 0},
+                                "2023": {"numero": 0, "liquidato": 0}
+                            }
+                        }
+                    ]
+                },
+        
+                "analisi_web": {
+                    "sito": {
+                        "dominio": "medicaldevicesitalia.it",
+                        "registrazione": "2020-01-25",
+                        "hosting": "EUROPEAN_PROVIDER",
+                        "ultimo_aggiornamento": "2023-04-15",
+                        "lingue": ["IT", "EN", "DE"]
+                    },
+                    "social_media": {
+                        "linkedin": {
+                            "presente": true,
+                            "followers": 3500,
+                            "post_ultimi_6_mesi": 24,
+                            "dipendenti_collegati": 95
+                        },
+                        "researchgate": {
+                            "presente": true,
+                            "pubblicazioni": 8,
+                            "citazioni": 45
+                        }
+                    },
+                    "recensioni_online": {
+                        "google": {
+                            "numero": 25,
+                            "media": 4.5,
+                            "positive": 22
+                        },
+                        "medical_devices_reviews": {
+                            "numero": 15,
+                            "media": 4.3,
+                            "positive": 13
+                        }
+                    }
+                },
+        
+                "network_relazioni": {
+                    "collegamenti_societari": {
+                        "soci_attuali": {
+                            "altre_partecipazioni": [
+                                {
+                                    "societa": "BIOTECH RESEARCH SRL",
+                                    "sede": "IT",
+                                    "quota": 25,
+                                    "stato": "ATTIVA"
+                                },
+                                {
+                                    "societa": "HEALTH INNOVATION GMBH",
+                                    "sede": "DE",
+                                    "quota": 30,
+                                    "stato": "ATTIVA"
+                                }
+                            ]
+                        },
+                        "amministratori": {
+                            "altre_cariche": [
+                                {
+                                    "societa": "MEDTECH EUROPE GMBH",
+                                    "sede": "DE",
+                                    "carica": "Consigliere",
+                                    "stato": "ATTIVA"
+                                },
+                                {
+                                    "societa": "ITALIAN MEDICAL RESEARCH SRL",
+                                    "sede": "IT",
+                                    "carica": "Presidente CDA",
+                                    "stato": "ATTIVA"
+                                }
+                            ]
+                        }
+                    },
+                    "fornitori_strategici": [
+                        {
+                            "nome": "POLYMER TECH SPA",
+                            "tipologia": "MATERIE_PRIME",
+                            "esposizione": 2500000,
+                            "inizio_rapporto": "2020-03-15"
+                        },
+                        {
+                            "nome": "PRECISION MANUFACTURING GMBH",
+                            "tipologia": "LAVORAZIONI",
+                            "esposizione": 1800000,
+                            "inizio_rapporto": "2020-06-01"
+                        }
+                    ],
+                    "clienti_principali": [
+                        {
+                            "nome": "HOSPITAL GROUP SPA",
+                            "settore": "HEALTHCARE",
+                            "fatturato_annuo": 4500000,
+                            "inizio_rapporto": "2021-01-15",
+                            "tipo_contratto": "FORNITURA_CONTINUATIVA"
+                        },
+                        {
+                            "nome": "MEDICAL DISTRIBUTOR GMBH",
+                            "settore": "DISTRIBUZIONE",
+                            "fatturato_annuo": 3500000,
+                            "inizio_rapporto": "2021-06-01",
+                            "tipo_contratto": "DISTRIBUZIONE_ESCLUSIVA"
+                        }
+                    ],
+                    "partnership_scientifiche": [
+                        {
+                            "partner": "UNIVERSITÀ DI MODENA",
+                            "tipo": "RICERCA_SVILUPPO",
+                            "progetto": "BIOMATERIALI_INNOVATIVI",
+                            "inizio": "2021-01-01",
+                            "durata_mesi": 36
+                        },
+                        {
+                            "partner": "FRAUNHOFER INSTITUTE",
+                            "tipo": "VALIDAZIONE_CLINICA",
+                            "progetto": "TRIAL_MULTICENTRICO",
+                            "inizio": "2022-01-01",
+                            "durata_mesi": 24
+                        }
+                    ]
+                }
+            }
+        }

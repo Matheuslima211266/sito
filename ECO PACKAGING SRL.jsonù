@@ -1,0 +1,729 @@
+{
+    "azienda_5": {
+        "info_base": {
+            "nome": "ECO PACKAGING SRL",
+            "codice_fiscale": "12345678906",
+            "p_iva": "12345678906",
+            "data_costituzione": "2020-04-01",
+            "sede_legale": {
+                "indirizzo": "Via dell'Ambiente 45",
+                "comune": "Lucca",
+                "provincia": "LU",
+                "regione": "Toscana",
+                "data_trasferimento": "2022-07-15",
+                "sede_precedente": {
+                    "indirizzo": "Via della Carta 12",
+                    "comune": "Porcari",
+                    "provincia": "LU"
+                }
+            },
+            "sedi_operative": [
+                {
+                    "indirizzo": "Via dell'Industria 78",
+                    "comune": "Lucca",
+                    "provincia": "LU",
+                    "data_apertura": "2020-06-01",
+                    "dipendenti": 50,
+                    "tipo": "STABILIMENTO_PRODUTTIVO"
+                },
+                {
+                    "indirizzo": "Via dell'Innovazione 34",
+                    "comune": "Altopascio",
+                    "provincia": "LU",
+                    "data_apertura": "2022-01-15",
+                    "dipendenti": 30,
+                    "tipo": "R&D_CENTER"
+                }
+            ],
+            "ateco": {
+                "principale": "17.21",
+                "secondari": ["17.29", "22.22"],
+                "storia": [
+                    {
+                        "data": "2020-04-01",
+                        "codice": "17.21"
+                    },
+                    {
+                        "data": "2021-09-15",
+                        "codice": "22.22",
+                        "aggiunto": true
+                    }
+                ]
+            },
+            "forma_giuridica": {
+                "attuale": "SRL",
+                "variazioni": [
+                    {
+                        "data": "2020-04-01",
+                        "tipo": "SRL STARTUP INNOVATIVA"
+                    },
+                    {
+                        "data": "2022-04-01",
+                        "tipo": "SRL"
+                    }
+                ]
+            }
+        },
+
+        "governance": {
+            "storia_amministratori": [
+                {
+                    "periodo": "2020-04-01/2022-03-31",
+                    "nome": "Laura Verdi",
+                    "cf": "VRDLRA76M41E715X",
+                    "carica": "AU",
+                    "eta_nomina": 44,
+                    "altre_cariche": 1,
+                    "precedenti": {
+                        "protesti": 0,
+                        "pregiudizievoli": 0
+                    }
+                },
+                {
+                    "periodo": "2022-04-01/oggi",
+                    "nome": "Erik Muller",
+                    "cf": "MLLRKE72A01Z112U",
+                    "carica": "AD",
+                    "eta_nomina": 50,
+                    "residenza": "DE",
+                    "altre_cariche": 2,
+                    "societa_cessate": 0
+                }
+            ],
+
+            "storia_capitale": [
+                {
+                    "data": "2020-04-01",
+                    "importo": 100000,
+                    "tipo": "COSTITUZIONE"
+                },
+                {
+                    "data": "2021-08-15",
+                    "importo": 1000000,
+                    "tipo": "AUMENTO_DENARO"
+                },
+                {
+                    "data": "2022-06-30",
+                    "importo": 2500000,
+                    "tipo": "AUMENTO_DENARO"
+                }
+            ],
+
+            "storia_soci": [
+                {
+                    "periodo": "2020-04-01/2021-08-14",
+                    "composizione": [
+                        {
+                            "nome": "Laura Verdi",
+                            "quota": 40,
+                            "tipo": "PF",
+                            "eta": 44,
+                            "residenza": "Lucca"
+                        },
+                        {
+                            "nome": "GREEN PACK INVEST SRL",
+                            "quota": 60,
+                            "tipo": "PG",
+                            "sede": "Milano"
+                        }
+                    ]
+                },
+                {
+                    "periodo": "2021-08-15/2022-06-29",
+                    "composizione": [
+                        {
+                            "nome": "SUSTAINABLE PACKAGING GMBH",
+                            "quota": 65,
+                            "tipo": "PG",
+                            "sede": "DE",
+                            "data_costituzione": "2015-07-01"
+                        },
+                        {
+                            "nome": "Laura Verdi",
+                            "quota": 35,
+                            "tipo": "PF",
+                            "eta": 45,
+                            "residenza": "Lucca"
+                        }
+                    ]
+                },
+                {
+                    "periodo": "2022-06-30/oggi",
+                    "composizione": [
+                        {
+                            "nome": "ECO SOLUTIONS AG",
+                            "quota": 75,
+                            "tipo": "PG",
+                            "sede": "DE",
+                            "data_costituzione": "2010-06-15"
+                        },
+                        {
+                            "nome": "Laura Verdi",
+                            "quota": 15,
+                            "tipo": "PF",
+                            "eta": 46,
+                            "residenza": "Lucca"
+                        },
+                        {
+                            "nome": "CIRCULAR ECONOMY FUND",
+                            "quota": 10,
+                            "tipo": "PG",
+                            "sede": "LU",
+                            "data_costituzione": "2018-03-01"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        "dipendenti": {
+            "2020": {
+                "Q1": {"numero": 10, "costo": 150000},
+                "Q2": {"numero": 20, "costo": 300000},
+                "Q3": {"numero": 30, "costo": 450000},
+                "Q4": {"numero": 40, "costo": 600000}
+            },
+            "2021": {
+                "Q1": {"numero": 45, "costo": 675000},
+                "Q2": {"numero": 55, "costo": 825000},
+                "Q3": {"numero": 65, "costo": 975000},
+                "Q4": {"numero": 75, "costo": 1125000}
+            },
+            "2022": {
+                "Q1": {"numero": 85, "costo": 1275000},
+                "Q2": {"numero": 95, "costo": 1425000},
+                "Q3": {"numero": 105, "costo": 1575000},
+                "Q4": {"numero": 115, "costo": 1725000}
+            },
+            "2023": {
+                "Q1": {"numero": 125, "costo": 1875000},
+                "Q2": {"numero": 140, "costo": 2100000}
+            },
+            "dettaglio_attuale": {
+                "eta": {
+                    "18-25": 30,
+                    "26-35": 55,
+                    "36-45": 40,
+                    "over_45": 15
+                },
+                "nazionalita": {
+                    "italiana": 115,
+                    "ue": 20,
+                    "extra_ue": 5
+                },
+                "contratti": {
+                    "tempo_determinato": 30,
+                    "tempo_indeterminato": 110,
+                    "stage": 0
+                },
+                "orario": {
+                    "full_time": 125,
+                    "part_time": 15
+                },
+                "qualifiche": {
+                    "operai_specializzati": 80,
+                    "tecnici": 35,
+                    "ricercatori": 15,
+                    "amministrativi": 10
+                }
+            }
+        }
+}{
+    "mezzi": {
+        "2020": {
+            "Q4": {
+                "numero": 10,
+                "proprieta": 7,
+                "leasing": 3,
+                "valore": 2000000
+            }
+        },
+        "2021": {
+            "Q4": {
+                "numero": 18,
+                "proprieta": 12,
+                "leasing": 6,
+                "valore": 4000000
+            }
+        },
+        "2022": {
+            "Q4": {
+                "numero": 25,
+                "proprieta": 16,
+                "leasing": 9,
+                "valore": 6000000
+            }
+        },
+        "2023": {
+            "Q2": {
+                "numero": 30,
+                "proprieta": 20,
+                "leasing": 10,
+                "valore": 7500000
+            }
+        },
+        "dettaglio_attuale": {
+            "eta_media": 2.5,
+            "tipologia": {
+                "linee_produzione_carta": 12,
+                "linee_produzione_bioplastiche": 8,
+                "macchinari_riciclaggio": 6,
+                "laboratorio_qualita": 4
+            },
+            "societa_leasing": [
+                {
+                    "nome": "INDUSTRIAL LEASE SPA",
+                    "numero_contratti": 6,
+                    "valore": 2500000
+                },
+                {
+                    "nome": "ECO FINANCE LEASING",
+                    "numero_contratti": 4,
+                    "valore": 1500000
+                }
+            ]
+        }
+    },
+
+    "dati_economici": {
+        "fatturato_mensile": {
+            "2020": [250000, 280000, 300000, 320000, 350000, 380000,
+                    400000, 420000, 450000, 480000, 500000, 520000],
+            "2021": [550000, 580000, 600000, 650000, 700000, 750000,
+                    800000, 850000, 900000, 950000, 1000000, 1100000],
+            "2022": [1200000, 1300000, 1400000, 1500000, 1600000, 1700000,
+                    1800000, 1900000, 2000000, 2100000, 2200000, 2300000],
+            "2023": [2400000, 2500000, 2600000, 2700000, 2800000, 2900000]
+        },
+        "clienti": {
+            "2020": {
+                "numero_totale": 20,
+                "concentrazione_primo": 20,
+                "concentrazione_top3": 45,
+                "tipologia": {
+                    "food_beverage": 50,
+                    "retail": 30,
+                    "industriale": 20
+                }
+            },
+            "2021": {
+                "numero_totale": 35,
+                "concentrazione_primo": 18,
+                "concentrazione_top3": 40,
+                "tipologia": {
+                    "food_beverage": 45,
+                    "retail": 35,
+                    "industriale": 20
+                }
+            },
+            "2022": {
+                "numero_totale": 50,
+                "concentrazione_primo": 15,
+                "concentrazione_top3": 35,
+                "tipologia": {
+                    "food_beverage": 40,
+                    "retail": 40,
+                    "industriale": 20
+                }
+            },
+            "2023": {
+                "numero_totale": 65,
+                "concentrazione_primo": 12,
+                "concentrazione_top3": 30,
+                "tipologia": {
+                    "food_beverage": 35,
+                    "retail": 45,
+                    "industriale": 20
+                }
+            }
+        },
+        "fornitori": {
+            "2020": {
+                "numero_totale": 15,
+                "concentrazione_primo": 25
+            },
+            "2021": {
+                "numero_totale": 25,
+                "concentrazione_primo": 20
+            },
+            "2022": {
+                "numero_totale": 35,
+                "concentrazione_primo": 18
+            },
+            "2023": {
+                "numero_totale": 45,
+                "concentrazione_primo": 15
+            }
+        }
+    },
+
+    "dati_finanziari": {
+        "conti_correnti": [
+            {
+                "banca": "BANCA1",
+                "apertura": "2020-04-10",
+                "saldi_medi": {
+                    "2020": 450000,
+                    "2021": 1200000,
+                    "2022": 2500000,
+                    "2023": 3500000
+                }
+            },
+            {
+                "banca": "BANCA2",
+                "apertura": "2021-09-01",
+                "saldi_medi": {
+                    "2021": 800000,
+                    "2022": 1800000,
+                    "2023": 2500000
+                }
+            }
+        ],
+        "movimentazione": {
+            "2021": {
+                "bonifici_italia": {
+                    "numero": 750,
+                    "importo_totale": 8500000
+                },
+                "bonifici_estero": {
+                    "numero": 85,
+                    "importo_totale": 2500000,
+                    "paesi": ["DE", "FR", "AT"]
+                }
+            },
+            "2022": {
+                "bonifici_italia": {
+                    "numero": 1100,
+                    "importo_totale": 18000000
+                },
+                "bonifici_estero": {
+                    "numero": 150,
+                    "importo_totale": 5500000,
+                    "paesi": ["DE", "FR", "AT", "ES", "NL"]
+                }
+            },
+            {
+    "dati_finanziari": {
+        "movimentazione": {
+            "2023": {
+                "bonifici_italia": {
+                    "numero": 650,
+                    "importo_totale": 14000000
+                },
+                "bonifici_estero": {
+                    "numero": 120,
+                    "importo_totale": 4500000,
+                    "paesi": ["DE", "FR", "AT", "ES", "NL", "BE"]
+                }
+            }
+        },
+        "finanziamenti": {
+            "mutui": [
+                {
+                    "tipo": "CHIROGRAFARIO",
+                    "banca": "BANCA1",
+                    "importo_iniziale": 2000000,
+                    "debito_residuo": 1600000,
+                    "accensione": "2022-03-15",
+                    "scadenza": "2027-03-14"
+                }
+            ],
+            "leasing": {
+                "2021": {"numero": 6, "debito_residuo": 1800000},
+                "2022": {"numero": 9, "debito_residuo": 2700000},
+                "2023": {"numero": 10, "debito_residuo": 3000000}
+            },
+            "altri_finanziamenti": [
+                {
+                    "tipo": "VENTURE_CAPITAL",
+                    "finanziatore": "CIRCULAR ECONOMY FUND",
+                    "importo": 1500000,
+                    "data": "2022-06-30"
+                }
+            ],
+            "contributi_pubblici": [
+                {
+                    "tipo": "MISE_ECONOMIA_CIRCOLARE",
+                    "ente": "MISE",
+                    "importo": 750000,
+                    "data": "2021-10-15",
+                    "durata_mesi": 24
+                },
+                {
+                    "tipo": "HORIZON_EUROPE",
+                    "ente": "EU COMMISSION",
+                    "importo": 900000,
+                    "data": "2022-05-01",
+                    "durata_mesi": 36
+                }
+            ]
+        }
+    },
+
+    "eventi_negativi": {
+        "protesti": [],
+        "pregiudizievoli": [],
+        "inps": {
+            "ritardi_pagamento": [],
+            "dipendenti_dichiarati": {
+                "2021": {"media": 60, "var_max": 10},
+                "2022": {"media": 100, "var_max": 12},
+                "2023": {"media": 132, "var_max": 8}
+            }
+        },
+        "infortuni": {
+            "2021": {"numero": 3, "gravita": "LIEVE"},
+            "2022": {"numero": 4, "gravita": "LIEVE"},
+            "2023": {"numero": 2, "gravita": "LIEVE"}
+        },
+        "contenziosi": [
+            {
+                "data_apertura": "2022-09-15",
+                "tipo": "BREVETTI",
+                "stato": "IN_CORSO",
+                "valore": 250000
+            }
+        ]
+    },
+
+    "autorizzazioni_licenze": {
+        "certificazioni_obbligatorie": [
+            {
+                "tipo": "ISO_22000",
+                "ente": "BUREAU_VERITAS",
+                "data_rilascio": "2020-09-15",
+                "scadenza": "2023-09-14",
+                "scope": "FOOD_PACKAGING"
+            },
+            {
+                "tipo": "FSC",
+                "ente": "FSC_ITALIA",
+                "data_rilascio": "2020-10-01",
+                "scadenza": "2025-09-30",
+                "scope": "CHAIN_OF_CUSTODY"
+            }
+        ],
+        "certificazioni": [
+            {
+                "tipo": "ISO_9001",
+                "ente": "DNV",
+                "data_rilascio": "2021-02-15",
+                "scadenza": "2024-02-14"
+            },
+            {
+                "tipo": "ISO_14001",
+                "ente": "DNV",
+                "data_rilascio": "2021-02-15",
+                "scadenza": "2024-02-14"
+            },
+            {
+                "tipo": "ISO_45001",
+                "ente": "DNV",
+                "data_rilascio": "2022-03-01",
+                "scadenza": "2025-02-28"
+            }
+        ],
+        "brevetti": [
+            {
+                "tipo": "EUROPEO",
+                "numero": "EP87654321",
+                "data_deposito": "2021-06-15",
+                "stato": "GRANTED",
+                "paesi": ["IT", "DE", "FR", "ES", "BE", "NL"]
+            },
+            {
+                "tipo": "ITALIANO",
+                "numero": "IT20210000456",
+                "data_deposito": "2022-04-10",
+                "stato": "PENDING"
+            }
+        ]
+    },
+
+    "operativita": {
+        "zone_attivita": {
+            "2021": ["Italia", "Germania", "Francia"],
+            "2022": ["Italia", "Germania", "Francia", "Spagna", "Benelux"],
+            "2023": ["UE"]
+        },
+        "produzione": {
+            "2021": {
+                "volume_tonnellate": 25000,
+                "capacita_utilizzata": 0.70,
+                "scarti": 0.04
+            },
+            "2022": {
+                "volume_tonnellate": 45000,
+                "capacita_utilizzata": 0.80,
+                "scarti": 0.03
+            },
+            "2023": {
+                "volume_tonnellate": 60000,
+                "capacita_utilizzata": 0.85,
+                "scarti": 0.025
+            }
+        },
+        "materie_prime": {
+            "2021": {
+                "costo_totale": 3500000,
+                "fornitori": 10,
+                "paesi_origine": ["IT", "DE"]
+            },
+            "2022": {
+                "costo_totale": 6500000,
+                "fornitori": 15,
+                "paesi_origine": ["IT", "DE", "FR"]
+            },
+            "2023": {
+                "costo_totale": 9000000,
+                "fornitori": 18,
+                "paesi_origine": ["IT", "DE", "FR", "AT"]
+            }
+        }
+    },
+
+    "assicurazioni": {
+        "polizze_attive": [
+            {
+                "tipo": "ALL_RISKS",
+                "compagnia": "ALPHA INSURANCE",
+                "massimale": 10000000,
+                "premio_annuo": 85000,
+                "sinistri": {
+                    "2021": {"numero": 2, "liquidato": 35000},
+                    "2022": {"numero": 3, "liquidato": 55000},
+                    "2023": {"numero": 1, "liquidato": 25000}
+                }
+            },
+            {
+                "tipo": "RC_PRODOTTI",
+                "compagnia": "BETA INSURANCE",
+                "massimale": 5000000,
+                "premio_annuo": 45000,
+                "sinistri": {
+                    "2021": {"numero": 0, "liquidato": 0},
+                    "2022": {"numero": 1, "liquidato": 30000},
+                    "2023": {"numero": 0, "liquidato": 0}
+                }
+            }
+        ]
+    },
+
+    "analisi_web": {
+        "sito": {
+            "dominio": "ecopackaging.it",
+            "registrazione": "2020-04-05",
+            "hosting": "ARUBA",
+            "ultimo_aggiornamento": "2023-05-10",
+            "lingue": ["IT", "EN", "DE", "FR"]
+        },
+        "social_media": {
+            "linkedin": {
+                "presente": true,
+                "followers": 4200,
+                "post_ultimi_6_mesi": 36,
+                "dipendenti_collegati": 128
+            },
+            "instagram": {
+                "presente": true,
+                "followers": 8500,
+                "post_ultimi_6_mesi": 48
+            }
+        },
+        "recensioni_online": {
+            "google": {
+                "numero": 35,
+                "media": 4.4,
+                "positive": 30
+            },
+            "trustpilot": {
+                "numero": 22,
+                "media": 4.2,
+                "positive": 18
+            }
+        }
+    },
+
+    "network_relazioni": {
+        "collegamenti_societari": {
+            "soci_attuali": {
+                "altre_partecipazioni": [
+                    {
+                        "societa": "RECYCLING TECH SRL",
+                        "sede": "IT",
+                        "quota": 30,
+                        "stato": "ATTIVA"
+                    },
+                    {
+                        "societa": "BIO MATERIALS GMBH",
+                        "sede": "DE",
+                        "quota": 20,
+                        "stato": "ATTIVA"
+                    }
+                ]
+            },
+            "amministratori": {
+                "altre_cariche": [
+                    {
+                        "societa": "GREEN PACKAGING AG",
+                        "sede": "DE",
+                        "carica": "Consigliere",
+                        "stato": "ATTIVA"
+                    },
+                    {
+                        "societa": "SUSTAINABLE SOLUTIONS SRL",
+                        "sede": "IT",
+                        "carica": "Presidente CDA",
+                        "stato": "ATTIVA"
+                    }
+                ]
+            }
+        },
+        "fornitori_strategici": [
+            {
+                "nome": "PAPER MILLS SPA",
+                "tipologia": "CARTA_RICICLATA",
+                "esposizione": 3500000,
+                "inizio_rapporto": "2020-06-15"
+            },
+            {
+                "nome": "BIO PLASTICS GMBH",
+                "tipologia": "BIOPLASTICHE",
+                "esposizione": 2800000,
+                "inizio_rapporto": "2021-03-01"
+            }
+        ],
+        "clienti_principali": [
+            {
+                "nome": "FOOD CHAIN SPA",
+                "settore": "GDO",
+                "fatturato_annuo": 3500000,
+                "inizio_rapporto": "2021-01-15",
+                "tipo_contratto": "FORNITURA_CONTINUATIVA"
+            },
+            {
+                "nome": "ECO RETAIL GROUP",
+                "settore": "RETAIL",
+                "fatturato_annuo": 2800000,
+                "inizio_rapporto": "2021-06-01",
+                "tipo_contratto": "PARTNERSHIP_STRATEGICA"
+            }
+        ],
+        "partnership_tecnologiche": [
+            {
+                "partner": "UNIVERSITÀ DI PISA",
+                "tipo": "RICERCA_SVILUPPO",
+                "progetto": "BIOPOLIMERI_INNOVATIVI",
+                "inizio": "2021-09-01",
+                "durata_mesi": 24
+            },
+            {
+                "partner": "FRAUNHOFER INSTITUTE",
+                "tipo": "SVILUPPO_PRODOTTO",
+                "progetto": "SMART_PACKAGING",
+                "inizio": "2022-03-01",
+                "durata_mesi": 18
+            }
+        ]
+    }
+}

@@ -1,0 +1,843 @@
+{
+    "azienda_3": {
+        "info_base": {
+            "nome": "GREEN ENERGY POWER SRL",
+            "codice_fiscale": "12345678904",
+            "p_iva": "12345678904",
+            "data_costituzione": "2020-02-01",
+            "sede_legale": {
+                "indirizzo": "Via dell'Energia 156",
+                "comune": "Bolzano",
+                "provincia": "BZ",
+                "regione": "Trentino-Alto Adige",
+                "data_trasferimento": "2022-03-10",
+                "sede_precedente": {
+                    "indirizzo": "Via del Sole 23",
+                    "comune": "Trento",
+                    "provincia": "TN"
+                }
+            },
+            "sedi_operative": [
+                {
+                    "indirizzo": "Via del Vento 78",
+                    "comune": "Brunico",
+                    "provincia": "BZ",
+                    "data_apertura": "2021-04-01",
+                    "dipendenti": 30,
+                    "tipo": "IMPIANTO_PRODUZIONE_1",
+                    "dettaglio": {
+                        "tipo_impianto": "EOLICO",
+                        "potenza_MW": 25,
+                        "superficie_mq": 150000
+                    }
+                },
+                {
+                    "indirizzo": "Via Solare 45",
+                    "comune": "Merano",
+                    "provincia": "BZ",
+                    "data_apertura": "2022-06-01",
+                    "dipendenti": 25,
+                    "tipo": "IMPIANTO_PRODUZIONE_2",
+                    "dettaglio": {
+                        "tipo_impianto": "FOTOVOLTAICO",
+                        "potenza_MW": 15,
+                        "superficie_mq": 80000
+                    }
+                }
+            ],
+            "ateco": {
+                "principale": "35.11",
+                "secondari": ["35.14", "43.21"],
+                "storia": [
+                    {
+                        "data": "2020-02-01",
+                        "codice": "35.11"
+                    },
+                    {
+                        "data": "2021-09-01",
+                        "codice": "35.14",
+                        "aggiunto": true
+                    }
+                ]
+            },
+            "forma_giuridica": {
+                "attuale": "SRL",
+                "variazioni": [
+                    {
+                        "data": "2020-02-01",
+                        "tipo": "SRL STARTUP INNOVATIVA"
+                    },
+                    {
+                        "data": "2022-02-01",
+                        "tipo": "SRL"
+                    }
+                ]
+            }
+        },
+
+        "governance": {
+            "storia_amministratori": [
+                {
+                    "periodo": "2020-02-01/2022-01-31",
+                    "nome": "Marco Verdi",
+                    "cf": "VRDMRC78A01L378X",
+                    "carica": "AU",
+                    "eta_nomina": 42,
+                    "altre_cariche": 2,
+                    "precedenti": {
+                        "protesti": 0,
+                        "pregiudizievoli": 0
+                    }
+                },
+                {
+                    "periodo": "2022-02-01/oggi",
+                    "nome": "Klaus Schmidt",
+                    "cf": "SCHMKLS72A01Z112U",
+                    "carica": "AD",
+                    "eta_nomina": 50,
+                    "residenza": "AT",
+                    "altre_cariche": 4,
+                    "societa_cessate": 0
+                }
+            ],
+
+            "storia_capitale": [
+                {
+                    "data": "2020-02-01",
+                    "importo": 200000,
+                    "tipo": "COSTITUZIONE"
+                },
+                {
+                    "data": "2021-05-15",
+                    "importo": 2000000,
+                    "tipo": "AUMENTO_DENARO"
+                },
+                {
+                    "data": "2022-10-01",
+                    "importo": 5000000,
+                    "tipo": "AUMENTO_DENARO"
+                }
+            ],
+
+            "storia_soci": [
+                {
+                    "periodo": "2020-02-01/2021-05-14",
+                    "composizione": [
+                        {
+                            "nome": "Marco Verdi",
+                            "quota": 30,
+                            "tipo": "PF",
+                            "eta": 42,
+                            "residenza": "Trento"
+                        },
+                        {
+                            "nome": "GREEN INVEST SRL",
+                            "quota": 70,
+                            "tipo": "PG",
+                            "sede": "Bolzano"
+                        }
+                    ]
+                },
+                {
+                    "periodo": "2021-05-15/2022-09-30",
+                    "composizione": [
+                        {
+                            "nome": "AUSTRIAN RENEWABLE AG",
+                            "quota": 75,
+                            "tipo": "PG",
+                            "sede": "AT",
+                            "data_costituzione": "2015-03-01"
+                        },
+                        {
+                            "nome": "Marco Verdi",
+                            "quota": 25,
+                            "tipo": "PF",
+                            "eta": 43,
+                            "residenza": "Trento"
+                        }
+                    ]
+                },
+                {
+                    "periodo": "2022-10-01/oggi",
+                    "composizione": [
+                        {
+                            "nome": "EUROPEAN GREEN POWER AG",
+                            "quota": 85,
+                            "tipo": "PG",
+                            "sede": "AT",
+                            "data_costituzione": "2010-05-15"
+                        },
+                        {
+                            "nome": "Marco Verdi",
+                            "quota": 15,
+                            "tipo": "PF",
+                            "eta": 44,
+                            "residenza": "Trento"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        "dipendenti": {
+            "2020": {
+                "Q1": {"numero": 10, "costo": 150000},
+                "Q2": {"numero": 15, "costo": 225000},
+                "Q3": {"numero": 20, "costo": 300000},
+                "Q4": {"numero": 25, "costo": 375000}
+            },
+            "2021": {
+                "Q1": {"numero": 30, "costo": 450000},
+                "Q2": {"numero": 40, "costo": 600000},
+                "Q3": {"numero": 50, "costo": 750000},
+                "Q4": {"numero": 60, "costo": 900000}
+            },
+            "2022": {
+                "Q1": {"numero": 70, "costo": 1050000},
+                "Q2": {"numero": 80, "costo": 1200000},
+                "Q3": {"numero": 90, "costo": 1350000},
+                "Q4": {"numero": 100, "costo": 1500000}
+            },
+            "2023": {
+                "Q1": {"numero": 110, "costo": 1650000},
+                "Q2": {"numero": 120, "costo": 1800000}
+            },
+            "dettaglio_attuale": {
+                "eta": {
+                    "18-25": 20,
+                    "26-35": 50,
+                    "36-45": 35,
+                    "over_45": 15
+                },
+                "nazionalita": {
+                    "italiana": 85,
+                    "ue": 30,
+                    "extra_ue": 5
+                },
+                "contratti": {
+                    "tempo_determinato": 30,
+                    "tempo_indeterminato": 90,
+                    "stage": 0
+                },
+                "orario": {
+                    "full_time": 105,
+                    "part_time": 15
+                },
+                "qualifiche": {
+                    "ingegneri_energetici": 30,
+                    "tecnici_impianti": 45,
+                    "manutentori": 25,
+                    "project_managers": 10,
+                    "amministrativi": 10
+                }
+            }
+        },
+
+        "mezzi": {
+            "2020": {
+                "Q4": {
+                    "numero_impianti": 1,
+                    "proprieta": 1,
+                    "leasing": 0,
+                    "valore": 5000000
+                }
+            },
+            "2021": {
+                "Q4": {
+                    "numero_impianti": 2,
+                    "proprieta": 1,
+                    "leasing": 1,
+                    "valore": 12000000
+                }
+            },
+            "2022": {
+                "Q4": {
+                    "numero_impianti": 3,
+                    "proprieta": 2,
+                    "leasing": 1,
+                    "valore": 18000000
+                }
+            },
+            "2023": {
+                "Q2": {
+                    "numero_impianti": 4,
+                    "proprieta": 2,
+                    "leasing": 2,
+                    "valore": 25000000
+                }
+            },
+            "dettaglio_attuale": {
+                "eta_media": 2.0,
+                "tipologia": {
+                    "impianti_eolici": {
+                        "numero": 2,
+                        "potenza_totale_MW": 45
+                    },
+                    "impianti_fotovoltaici": {
+                        "numero": 2,
+                        "potenza_totale_MW": 30
+                    }
+                },
+                "societa_leasing": [
+                    {
+                        "nome": "ENERGY LEASE SPA",
+                        "numero_contratti": 1,
+                        "valore": 8000000
+                    },
+                    {
+                        "nome": "GREEN FINANCE AG",
+                        "numero_contratti": 1,
+                        "valore": 7000000
+                    }
+                ]
+            }
+        }
+    }
+}
+{
+    "dati_economici": {
+        "fatturato_mensile": {
+            "2020": [200000, 220000, 250000, 280000, 300000, 350000,
+                    400000, 450000, 500000, 550000, 600000, 650000],
+            "2021": [700000, 750000, 800000, 850000, 900000, 1000000,
+                    1100000, 1200000, 1300000, 1400000, 1500000, 1600000],
+            "2022": [1700000, 1800000, 1900000, 2000000, 2100000, 2200000,
+                    2300000, 2400000, 2500000, 2600000, 2700000, 2800000],
+            "2023": [2900000, 3000000, 3100000, 3200000, 3300000, 3400000]
+        },
+        "clienti": {
+            "2020": {
+                "numero_totale": 5,
+                "concentrazione_primo": 45,
+                "concentrazione_top3": 85,
+                "tipologia": {
+                    "distributori_energia": 80,
+                    "clienti_industriali": 20
+                }
+            },
+            "2021": {
+                "numero_totale": 8,
+                "concentrazione_primo": 40,
+                "concentrazione_top3": 75,
+                "tipologia": {
+                    "distributori_energia": 70,
+                    "clienti_industriali": 30
+                }
+            },
+            "2022": {
+                "numero_totale": 12,
+                "concentrazione_primo": 35,
+                "concentrazione_top3": 65,
+                "tipologia": {
+                    "distributori_energia": 60,
+                    "clienti_industriali": 40
+                }
+            },
+            "2023": {
+                "numero_totale": 15,
+                "concentrazione_primo": 30,
+                "concentrazione_top3": 60,
+                "tipologia": {
+                    "distributori_energia": 55,
+                    "clienti_industriali": 45
+                }
+            }
+        },
+        "produzione_energia": {
+            "2020": {
+                "MWh_totali": 75000,
+                "disponibilita_impianti": 0.92,
+                "efficienza": 0.85
+            },
+            "2021": {
+                "MWh_totali": 180000,
+                "disponibilita_impianti": 0.94,
+                "efficienza": 0.87
+            },
+            "2022": {
+                "MWh_totali": 280000,
+                "disponibilita_impianti": 0.95,
+                "efficienza": 0.89
+            },
+            "2023": {
+                "MWh_totali": 350000,
+                "disponibilita_impianti": 0.96,
+                "efficienza": 0.90
+            }
+        }
+    },
+
+    "dati_finanziari": {
+        "conti_correnti": [
+            {
+                "banca": "BANCA1",
+                "apertura": "2020-02-15",
+                "saldi_medi": {
+                    "2020": 800000,
+                    "2021": 2500000,
+                    "2022": 4500000,
+                    "2023": 6000000
+                }
+            },
+            {
+                "banca": "BANCA2",
+                "apertura": "2021-06-01",
+                "saldi_medi": {
+                    "2021": 1500000,
+                    "2022": 3500000,
+                    "2023": 4500000
+                }
+            }
+        ],
+        "movimentazione": {
+            "2021": {
+                "bonifici_italia": {
+                    "numero": 650,
+                    "importo_totale": 12000000
+                },
+                "bonifici_estero": {
+                    "numero": 80,
+                    "importo_totale": 3500000,
+                    "paesi": ["AT", "DE", "CH"]
+                }
+            },
+            "2022": {
+                "bonifici_italia": {
+                    "numero": 850,
+                    "importo_totale": 25000000
+                },
+                "bonifici_estero": {
+                    "numero": 120,
+                    "importo_totale": 8000000,
+                    "paesi": ["AT", "DE", "CH", "DK"]
+                }
+            },
+            "2023": {
+                "bonifici_italia": {
+                    "numero": 500,
+                    "importo_totale": 18000000
+                },
+                "bonifici_estero": {
+                    "numero": 85,
+                    "importo_totale": 6000000,
+                    "paesi": ["AT", "DE", "CH", "DK", "SE"]
+                }
+            }
+        },
+        "finanziamenti": {
+            "project_financing": [
+                {
+                    "tipo": "SINDACATO",
+                    "capofila": "BANCA1",
+                    "importo": 15000000,
+                    "data_accensione": "2021-05-15",
+                    "durata_anni": 12,
+                    "debito_residuo": 12500000,
+                    "garanzie": ["IPOTECA_IMPIANTI", "PEGNO_QUOTE"]
+                }
+            ],
+            "leasing": {
+                "2021": {"numero": 1, "debito_residuo": 7000000},
+                "2022": {"numero": 1, "debito_residuo": 6500000},
+                "2023": {"numero": 2, "debito_residuo": 13000000}
+            },
+            "contributi_pubblici": [
+                {
+                    "tipo": "GSE_INCENTIVI",
+                    "importo_annuo": 3500000,
+                    "durata_anni": 20,
+                    "inizio": "2021-01-01"
+                },
+                {
+                    "tipo": "PROVINCIA_BZ",
+                    "importo": 1500000,
+                    "erogazione": "2022-03-15",
+                    "tipo_contributo": "CONTO_CAPITALE"
+                }
+            ]
+        }
+    },
+
+    "eventi_negativi": {
+        "protesti": [],
+        "pregiudizievoli": [],
+        "inps": {
+            "ritardi_pagamento": [],
+            "dipendenti_dichiarati": {
+                "2021": {"media": 45, "var_max": 10},
+                "2022": {"media": 85, "var_max": 15},
+                "2023": {"media": 115, "var_max": 10}
+            }
+        },
+        "infortuni": {
+            "2021": {"numero": 2, "gravita": "LIEVE"},
+            "2022": {"numero": 3, "gravita": "LIEVE"},
+            "2023": {"numero": 1, "gravita": "MEDIO"}
+        },
+        "contenziosi": [
+            {
+                "data_apertura": "2022-07-15",
+                "tipo": "AMMINISTRATIVO",
+                "oggetto": "RICORSO_AUTORIZZAZIONE",
+                "stato": "IN_CORSO",
+                "valore": 250000
+            }
+        ]
+    },
+
+    "autorizzazioni_licenze": {
+        "autorizzazioni_produzione": [
+            {
+                "tipo": "PRODUZIONE_ENERGIA",
+                "ente": "GSE",
+                "numero": "EE123/2020",
+                "data_rilascio": "2020-05-15",
+                "durata_anni": 20
+            },
+            {
+                "tipo": "AUTORIZZAZIONE_UNICA",
+                "ente": "PROVINCIA_BZ",
+                "numero": "AU456/2021",
+                "data_rilascio": "2021-03-01",
+                "impianto": "EOLICO_1"
+            }
+        ],
+        "certificazioni": [
+            {
+                "tipo": "ISO_14001",
+                "ente": "DNV",
+                "data_rilascio": "2021-01-10",
+                "scadenza": "2024-01-09"
+            },
+            {
+                "tipo": "ISO_9001",
+                "ente": "DNV",
+                "data_rilascio": "2021-01-10",
+                "scadenza": "2024-01-09"
+            },
+            {
+                "tipo": "ISO_45001",
+                "ente": "DNV",
+                "data_rilascio": "2022-03-15",
+                "scadenza": "2025-03-14"
+            }
+        ],
+        "certificati_verdi": {
+            "2021": {
+                "numero": 180000,
+                "valore_medio": 110
+            },
+            "2022": {
+                "numero": 280000,
+                "valore_medio": 115
+            },
+            "2023": {
+                "numero": 350000,
+                "valore_medio": 118
+            }
+        }
+    },
+
+    "operativita": {
+        "zone_attivita": {
+            "2021": ["Trentino-Alto Adige"],
+            "2022": ["Trentino-Alto Adige", "Veneto"],
+            "2023": ["Trentino-Alto Adige", "Veneto", "Lombardia"]
+        },
+        "produzione_energia": {
+            "2021": {
+                "eolico": {
+                    "MWh": 120000,
+                    "ore_funzionamento": 7500,
+                    "efficienza": 0.92
+                },
+                "fotovoltaico": {
+                    "MWh": 60000,
+                    "ore_funzionamento": 1800,
+                    "efficienza": 0.85
+                }
+            },
+            "2022": {
+                "eolico": {
+                    "MWh": 180000,
+                    "ore_funzionamento": 7600,
+                    "efficienza": 0.94
+                },
+                "fotovoltaico": {
+                    "MWh": 100000,
+                    "ore_funzionamento": 1850,
+                    "efficienza": 0.87
+                }
+            },
+            "2023": {
+                "eolico": {
+                    "MWh": 230000,
+                    "ore_funzionamento": 7700,
+                    "efficienza": 0.95
+                },
+                "fotovoltaico": {
+                    "MWh": 120000,
+                    "ore_funzionamento": 1900,
+                    "efficienza": 0.89
+                }
+            }
+        },
+        "manutenzione": {
+            "programmata": {
+                "ore_annue": 480,
+                "costo_medio": 850000
+            },
+            "straordinaria": {
+                "interventi_2021": 5,
+                "interventi_2022": 7,
+                "interventi_2023": 4,
+                "costo_medio_intervento": 45000
+            }
+        }
+    },
+
+    "assicurazioni": {
+        "polizze_attive": [
+            {
+                "tipo": "ALL RISKS",
+                "compagnia": "ALPHA INSURANCE",
+                "massimale": 25000000,
+                "premio_annuo": 180000,
+                "garanzie": ["DANNI_MATERIALI", "DANNI_INDIRETTI"],
+                "sinistri": {
+                    "2021": {"numero": 1, "liquidato": 35000},
+                    "2022": {"numero": 2, "liquidato": 85000},
+                    "2023": {"numero": 1, "liquidato": 40000}
+                }
+            },
+            {
+                "tipo": "RC_TERZI",
+                "compagnia": "BETA INSURANCE",
+                "massimale": 10000000,
+                "premio_annuo": 45000,
+                "sinistri": {
+                    "2021": {"numero": 0, "liquidato": 0},
+                    "2022": {"numero": 1, "liquidato": 15000},
+                    "2023": {"numero": 0, "liquidato": 0}
+                }
+            }
+        ]
+    },
+
+    "analisi_web": {
+        "sito": {
+            "dominio": "greenenergypower.it",
+            "registrazione": "2020-02-10",
+            "hosting": "GREEN_PROVIDER",
+            "ultimo_aggiornamento": "2023-05-20",
+            "lingue": ["IT", "DE", "EN"]
+        },
+        "social_media": {
+            "linkedin": {
+                "presente": true,
+                "followers": 2800,
+                "post_ultimi_6_mesi": 36,
+                "dipendenti_collegati": 95
+            }
+        },
+        "recensioni_online": {
+            "google": {
+                "numero": 28,
+                "media": 4.6,
+                "positive": 25
+            }
+        }
+    },
+
+    "network_relazioni": {
+        "collegamenti_societari": {
+            "soci_attuali": {
+                "altre_partecipazioni": [
+                    {
+                        "societa": "WIND POWER SRL",
+                        "sede": "IT",
+                        "quota": 35,
+                        "stato": "ATTIVA"
+                    },
+                    {
+                        "societa": "SOLAR PROJECTS AG",
+                        "sede": "AT",
+                        "quota": 25,
+                        "stato": "ATTIVA"
+                    }
+                ]
+            },
+            "amministratori": {
+                "altre_cariche": [
+                    {
+                        "societa": "RENEWABLE ENERGY AG",
+                        "sede": "AT",
+                        "carica": "Consigliere",
+                        "stato": "ATTIVA"
+                    },
+                    {
+                        "societa": "GREEN TECH SRL",
+                        "sede": "IT",
+                        "carica": "Presidente CDA",
+                        "stato": "ATTIVA"
+                    }
+                ]
+            }
+        },
+        {
+            "fornitori_strategici": [
+                {
+                    "nome": "WIND TURBINES GMBH",
+                    "tipologia": "TURBINE_EOLICHE",
+                    "esposizione": 12000000,
+                    "inizio_rapporto": "2020-06-15"
+                },
+                {
+                    "nome": "SOLAR PANELS SPA",
+                    "tipologia": "PANNELLI_FOTOVOLTAICI",
+                    "esposizione": 8000000,
+                    "inizio_rapporto": "2021-03-01"
+                },
+                {
+                    "nome": "MAINTENANCE SERVICES SRL",
+                    "tipologia": "MANUTENZIONE",
+                    "esposizione": 850000,
+                    "inizio_rapporto": "2020-09-01"
+                }
+            ],
+            "clienti_principali": [
+                {
+                    "nome": "NATIONAL GRID SPA",
+                    "settore": "DISTRIBUZIONE_ENERGIA",
+                    "fatturato_annuo": 15000000,
+                    "inizio_rapporto": "2020-06-01",
+                    "tipo_contratto": "PPA_20_ANNI"
+                },
+                {
+                    "nome": "INDUSTRIAL POWER SRL",
+                    "settore": "INDUSTRIA",
+                    "fatturato_annuo": 8000000,
+                    "inizio_rapporto": "2021-04-15",
+                    "tipo_contratto": "PPA_10_ANNI"
+                }
+            ],
+            "partnership_tecniche": [
+                {
+                    "partner": "UNIVERSITÀ DI TRENTO",
+                    "tipo": "RICERCA_SVILUPPO",
+                    "progetto": "OTTIMIZZAZIONE_IMPIANTI",
+                    "inizio": "2021-03-01",
+                    "durata_mesi": 24
+                },
+                {
+                    "partner": "WEATHER SERVICES AG",
+                    "tipo": "PREVISIONI_METEO",
+                    "progetto": "FORECASTING_PRODUZIONE",
+                    "inizio": "2021-01-01",
+                    "rinnovo_annuale": true
+                }
+            ],
+            "associazioni_settore": [
+                {
+                    "nome": "ANEV",
+                    "tipo": "EOLICO",
+                    "ruolo": "MEMBRO_ORDINARIO",
+                    "inizio": "2020-06-01"
+                },
+                {
+                    "nome": "ITALIA SOLARE",
+                    "tipo": "FOTOVOLTAICO",
+                    "ruolo": "MEMBRO_ORDINARIO",
+                    "inizio": "2021-01-01"
+                }
+            ]
+        },
+
+        "indicatori_performance": {
+            "produzione": {
+                "2021": {
+                    "disponibilita_impianti": 0.92,
+                    "performance_ratio": 0.85,
+                    "energia_prodotta_vs_target": 1.02
+                },
+                "2022": {
+                    "disponibilita_impianti": 0.94,
+                    "performance_ratio": 0.87,
+                    "energia_prodotta_vs_target": 1.05
+                },
+                "2023": {
+                    "disponibilita_impianti": 0.95,
+                    "performance_ratio": 0.89,
+                    "energia_prodotta_vs_target": 1.08
+                }
+            },
+            "sostenibilita": {
+                "2021": {
+                    "CO2_evitata_tons": 85000,
+                    "alberi_equivalenti": 425000
+                },
+                "2022": {
+                    "CO2_evitata_tons": 150000,
+                    "alberi_equivalenti": 750000
+                },
+                "2023": {
+                    "CO2_evitata_tons": 190000,
+                    "alberi_equivalenti": 950000
+                }
+            },
+            "economici": {
+                "2021": {
+                    "EBITDA_margin": 0.65,
+                    "LCOE": 45,
+                    "PPA_prezzo_medio": 95
+                },
+                "2022": {
+                    "EBITDA_margin": 0.68,
+                    "LCOE": 42,
+                    "PPA_prezzo_medio": 98
+                },
+                "2023": {
+                    "EBITDA_margin": 0.70,
+                    "LCOE": 40,
+                    "PPA_prezzo_medio": 102
+                }
+            }
+        },
+
+        "impatto_territoriale": {
+            "occupazione_indotta": {
+                "2021": {
+                    "diretta": 60,
+                    "indiretta": 180
+                },
+                "2022": {
+                    "diretta": 100,
+                    "indiretta": 300
+                },
+                "2023": {
+                    "diretta": 120,
+                    "indiretta": 360
+                }
+            },
+            "benefici_comunita": {
+                "royalties_comuni": {
+                    "2021": 350000,
+                    "2022": 580000,
+                    "2023": 720000
+                },
+                "progetti_sociali": [
+                    {
+                        "tipo": "BORSE_STUDIO",
+                        "beneficiari": 25,
+                        "importo_annuo": 75000
+                    },
+                    {
+                        "tipo": "EFFICIENZA_ENERGETICA_SCUOLE",
+                        "beneficiari": 5,
+                        "importo_totale": 250000
+                    }
+                ]
+            }
+        }
+    }
+}
